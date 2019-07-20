@@ -3,7 +3,6 @@ baseurl: ''
 exclude:
   - node_modules
   - .gitignore
-  - gulpfile.js
   - index.js
   - package-lock.json
   - package.json
