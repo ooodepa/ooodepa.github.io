@@ -1,6 +1,7 @@
 ---
 layout: Docs/Docs
 title: Сертификаты
+description: Сертификаты
 ---
 
 - [DE-PA Electric](http://docs.de-pa.by/certificates/certificates-de-pa-electric.pdf)

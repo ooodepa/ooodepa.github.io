@@ -1,6 +1,7 @@
 ---
 layout: Default/Default
 title: Главная
+description: Главная
 ---
 
 {% include pages/Home/Carousel/Carousel.html %}
