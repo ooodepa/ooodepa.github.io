@@ -1,43 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-	<loc>https://ooodepa.github.io/</loc>
-	<lastmod>2019-07-19T16:10:25+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/</loc>
-	<lastmod>2019-07-19T16:10:25+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/about-us/</loc>
-	<lastmod>2019-07-19T16:10:28+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/katalogs/</loc>
-	<lastmod>2019-07-19T16:10:30+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/products/</loc>
-	<lastmod>2019-07-19T16:10:30+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/certificates/</loc>
-	<lastmod>2019-07-19T16:10:30+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/contacts/</loc>
-	<lastmod>2019-07-19T16:10:31+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://ooodepa.github.io/jekyll-de-pa/prices/</loc>
-	<lastmod>2019-07-19T16:10:32+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset>
+    <url>
+        <loc>http://ooodepa.github.io/</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
+    <url>
+        <loc>http://ooodepa.github.io/about-us/</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
+    <url>
+        <loc>http://ooodepa.github.io/katalogs</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
+    <url>
+        <loc>http://ooodepa.github.io/products</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
+    <url>
+        <loc>http://ooodepa.github.io/certificates</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
+    <url>
+        <loc>http://ooodepa.github.io/prices</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
+    <url>
+        <loc>http://ooodepa.github.io/contacts</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+        <lastmod>2019-07-21</lastmod>
+    </url>
 </urlset>
