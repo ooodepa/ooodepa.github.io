@@ -1,0 +1,36 @@
+{
+  "name": "jekyll-de-pa",
+  "version": "2019.7.14",
+  "description": "jekyll website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -w --mode development",
+    "prod": "webpack -w --mode production",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "PavelGalanin2001",
+  "license": "ISC",
+  "homepage": "https://ooodepa.github.io/jekyll-de-pa/",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooodepa/jekyll-de-pa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ooodepa/jekyll-de-pa/issues"
+  }
+}

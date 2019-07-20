@@ -1,0 +1,26 @@
+.headerMenuMobile
+    display: none!important
+
+.headerMenuMobileOpen
+    display: block!important
+
+.header__mobile-menu
+    ul
+        margin: 0
+        padding: 0
+    ul ul
+        display: none
+        background: rgba(0, 0, 0, 0.1)
+    ul a
+        text-decoration: none
+        text-align: center
+        display: block
+        padding: 16px 16px
+        color: $siteColor
+    ul a:hover
+        background-color: $siteColor
+        color: white
+
+@media (min-width: 1024px)
+    .headerMenuMobile
+        display: none!important;

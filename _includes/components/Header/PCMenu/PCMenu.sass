@@ -1,0 +1,60 @@
+.page__header-nav
+    display: none
+    float: right
+    width: calc(100% - #{$logoWidth})
+    height: 100%
+
+    //ul 1
+    div,
+    div > ul,
+    div > ul > li,
+    div > ul > li> a
+        height: 100%
+    
+    div > ul > li
+        display: inline-block
+
+    // ul++
+    ul
+        padding: 0
+        margin: 0
+
+    ul ul
+        display: none
+        background-color: #fff
+        width: 280px
+        z-index: 2
+
+    ul > li
+        position: relative
+        display: block
+
+    li > ul
+        position: absolute
+        display: none
+
+    li:hover > ul
+        display: block
+
+    ul a
+        display: flex
+        align-items: center
+        padding: 16px
+
+    ul a:hover
+        text-decoration: none
+        background-color: $siteColor
+        color: white
+
+    // ul2
+    ul ul a
+        border: 1px solid $siteColor
+
+    // ul3
+    ul ul ul
+        left: 100%
+        top: 0
+
+@media(min-width: 1024px)
+    .page__header-nav
+        display: block!important
