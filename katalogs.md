@@ -2,7 +2,7 @@
 layout: Docs/Docs
 title: Каталоги
 description: Каталоги
-permalink: katalogs
+permalink: katalogs/
 ---
 
 - [DE-PA Electric](http://docs.de-pa.by/katalogs/katalog-de-pa-electric.pdf)

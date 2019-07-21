@@ -2,7 +2,7 @@
 layout: Default/Default
 title: Контакты
 description: Контакты
-permalink: contacts
+permalink: contacts/
 ---
 
 {% include pages/Contacts/Map/Map.html %}
