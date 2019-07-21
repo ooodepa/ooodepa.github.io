@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+{% include components/Head/Head.html %}
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            {% include components/Header/Header.html %}
+            {% include components/Carousel/Carousel.html %}
+            <main>
+                <div class="container">
+                    {{ content }}
+                </div>
+            </main>
+        </div>
+        {% include components/Footer/Footer.html %}
+    </div>
+</body>
+
+</html>

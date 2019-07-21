@@ -10,11 +10,8 @@ $navHeight: 40px
 /*footer*/
 $footerBackgroundColor: #212529
 
-.carousel-indicators
-    z-index: 15!important
-
-.preloader
-    z-index: 100!important
+#carouselExampleIndicators
+    padding-bottom: 16px
 
 h1,
 h2,
@@ -24,3 +21,17 @@ h5,
 h6
     color: $siteColor!important
     text-align: center
+
+main
+    img
+        margin: 0 auto
+        float: left
+        margin: 22px
+        max-width: 100%
+
+@media (max-width: 768px)
+    main
+        img
+            float: none
+            margin: 0
+            width: 100%
