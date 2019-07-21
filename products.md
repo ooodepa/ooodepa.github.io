@@ -2,6 +2,7 @@
 layout: Docs/Docs
 title: Продукция
 description: Продукция
+permalink: products
 ---
 
 - [Описание PRONIL ACR ДЕ-ПА](http://docs.de-pa.by/products/Описание-PRONIL-ACR-ДЕ-ПА.pdf)
