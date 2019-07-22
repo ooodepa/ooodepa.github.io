@@ -1,5 +1,7 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 let conf = {
     entry: './index.js',
@@ -21,7 +23,7 @@ let conf = {
                 test: /\.sass$/,
                 use: [
                     {
-                        loader: "style-loader"
+                        loader: MiniCssExtractPlugin.loader,
                     },
                     {
                         loader: "css-loader"
@@ -31,7 +33,7 @@ let conf = {
                         options: {
                             plugins: [
                                 autoprefixer({
-                                    browsers:['ie >= 8', 'last 4 version']
+                                    browsers:['ie >= 6', 'last 3000 version']
                                 })
                             ]
                         }
@@ -46,15 +48,24 @@ let conf = {
             }
 
         ]
-    }
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+          filename: 'styles.css',
+        }),
+        new OptimizeCssAssetsPlugin({
+            AssetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano')
+        })
+      ],
 };
 
 module.exports = (env, options) => {
     let
         production = options.mode === 'production';
+
     conf.devtool = production
-        // ? 'source-map'
-        ? false
+        ? false // ? 'source-map'
         : 'eval-sourcemap';
 
     return conf;
