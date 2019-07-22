@@ -19,7 +19,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -w --mode development",
     "prod": "webpack -w --mode production",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "build-de-pa": "rm yandex_**.html; cp ./_libs/de-pa/**; cp ./_libs/de-pa/.htaccess ./; jekyll build",
+    "build-ooodepa": "rm yandex_**.html; rm .htaccess; cp ./_libs/ooodepa/** ./"
   },
   "repository": {
     "type": "git",

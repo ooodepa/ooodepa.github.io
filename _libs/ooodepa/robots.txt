@@ -1,0 +1,7 @@
+Host: https://ooodepa.github.io
+
+User-agent: *
+Sitemap: https://ooodepa.github.io/sitemap.xml
+
+User-agent: Yandex
+Sitemap: https://ooodepa.github.io/sitemap.xml

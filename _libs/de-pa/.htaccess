@@ -1,0 +1,10 @@
+## errors
+ErrorDocument 404 /404.html
+
+## https
+RewriteCond %{HTTPS} =off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+
+## www to not www
+RewriteCond %{HTTP_HOST} ^www.de-pa\.by$ [NC]
+RewriteRule ^(.*)$ https://de-pa.by/$1 [R=301,L]
