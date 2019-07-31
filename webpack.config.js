@@ -32,9 +32,7 @@ let conf = {
                         loader: 'postcss-loader',
                         options: {
                             plugins: [
-                                autoprefixer({
-                                    browsers:['ie >= 6', 'last 3000 version']
-                                })
+                                autoprefixer()
                             ]
                         }
                     },                    
