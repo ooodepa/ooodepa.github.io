@@ -20,7 +20,7 @@
     "dev": "webpack -w --mode development",
     "prod": "webpack -w --mode production",
     "build": "webpack --mode production",
-
+    "server": "jekyll serve",
     "yandex-de-pa": "rm yandex_**.html;  cp ./_libs/de-pa/Yandex/yandex_**.html ./; cp ./_libs/de-pa/Yandex/Yandex.html ./_includes/components/Yandex/",
     "yandex-ooodepa": "rm yandex_**.html; cp ./_libs/ooodepa/Yandex/yandex_**.html ./; cp ./_libs/ooodepa/Yandex/Yandex.html ./_includes/components/Yandex/",
     "build-de-pa": "npm run yandex-de-pa; cp ./_libs/de-pa/public/** ./; cp ./_libs/de-pa/public/.htaccess ./; jekyll build",
