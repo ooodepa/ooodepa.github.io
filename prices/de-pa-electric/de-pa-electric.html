@@ -22,12 +22,26 @@ permalink: prices/de-pa-electric/
                 data = data.feed.entry;
                 var PageHTML = '';
                 for (var i = 0; i < data.length; i++) {
+
+                    if (data[i].gsx$code.$t) {
+                        var code =
+                        '<div><b>Код:</b> ' + data[i].gsx$code.$t + '</div>';
+                    } else { var code = ''; };
+
+                    if (data[i].gsx$cost.$t) {
+                        var cost =
+                        '<div><b>Цена:</b> ' + data[i].gsx$cost.$t + '</div>';
+                    } else { var cost = ''; };
+
+                    if (data[i].gsx$onbox.$t) {
+                        var onbox =
+                        '<div><b>В коробке:</b> ' + data[i].gsx$onbox.$t + '</div>';
+                    } else { var onbox = ''; };
+
                     PageHTML +=
                         '<div class="PageHTML__item">'
                         + '<div class="PageHTML__title">' + data[i].gsx$name.$t + '</div>'
-                        + '<div><b>Код:</b> ' + data[i].gsx$code.$t + '</div>'
-                        + '<div><b>Цена:</b> ' + data[i].gsx$cost.$t + '</div>'
-                        + '<div><b>В коробке:</b> ' + data[i].gsx$onbox.$t + '</div>'
+                        + code + cost + onbox
                         + '</div>';
                 }
                 $('.google_table').html(PageHTML);
