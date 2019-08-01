@@ -11,7 +11,9 @@ let conf = {
         publicPath: '/dist/'
     },
     devServer: {
-        overlay: true
+        overlay: true,
+        contentBase: path.join(__dirname, '_site'),
+        watchContentBase: true
     },
     module: {
         rules: [
