@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
     
-{% include components/Head/Head.html %}
+{% include Head/Head.html %}
 
 <body>
     <div class="wrapper">
         <div class="content">
-            {% include components/Header/Header.html %}
-            {% include components/Carousel/Carousel.html %}
+            {% include Header/Header.html %}
+            {% include Carousel/Carousel.html %}
             <main>
                 <div class="container">
                     {{ content }}
                 </div>
             </main>
         </div>
-        {% include components/Footer/Footer.html %}
+        {% include Footer/Footer.html %}
     </div>
 </body>
 
