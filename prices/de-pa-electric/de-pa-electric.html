@@ -1,11 +1,12 @@
 ---
 layout: Page/Page
-title: Продукция DE-PA Electric
-description: Продукция DE-PA Electric
+title: Прайс DE-PA Electric
+description: Прайс DE-PA Electric
 permalink: prices/de-pa-electric/
 ---
 
-<div class="PageHTML">
+<div class="page__price">
+    <a href="/prices">Продукция</a> > <a href="/{{ page.permalink }}">{{ page.title }}</a>
     <div class="google_table">
         <p>Если в течении нескольких секунд ничего не появилось, то возможно отключен Java Script. Для отображения этой
             страницы включите Java Script в настройках браузера</p>
@@ -22,27 +23,33 @@ permalink: prices/de-pa-electric/
                 data = data.feed.entry;
                 var PageHTML = '';
                 for (var i = 0; i < data.length; i++) {
+                    if(data[i].gsx$show.$t != 0) {
+                        if (data[i].gsx$img.$t) {
+                            var img =
+                            '<div class="price_card__img"><img src="' + data[i].gsx$img.$t + '" /></div>';
+                        } else { var img = ''; };
 
-                    if (data[i].gsx$code.$t) {
-                        var code =
-                        '<div><b>Код:</b> ' + data[i].gsx$code.$t + '</div>';
-                    } else { var code = ''; };
+                        if (data[i].gsx$name.$t) {
+                            var name = '<div class="price_card__title">' + data[i].gsx$name.$t + '</div>';
+                        } else { var name = ''; };
 
-                    if (data[i].gsx$cost.$t) {
-                        var cost =
-                        '<div><b>Цена:</b> ' + data[i].gsx$cost.$t + '</div>';
-                    } else { var cost = ''; };
+                        if (data[i].gsx$code.$t) {
+                            var code = '<li>Модель: </li>' + '<li>' + data[i].gsx$code.$t + '</li>';
+                        } else { var code = ''; };
 
-                    if (data[i].gsx$onbox.$t) {
-                        var onbox =
-                        '<div><b>В коробке:</b> ' + data[i].gsx$onbox.$t + '</div>';
-                    } else { var onbox = ''; };
+                        if (data[i].gsx$cost.$t) {
+                            var cost = '<li>Цена за 1 ед. c НДС: </li>' + '<li>' + data[i].gsx$cost.$t + ' BYN</li>';
+                        } else { var cost = ''; };
 
-                    PageHTML +=
-                        '<div class="PageHTML__item">'
-                        + '<div class="PageHTML__title">' + data[i].gsx$name.$t + '</div>'
-                        + code + cost + onbox
-                        + '</div>';
+                        if (data[i].gsx$onbox.$t) {
+                            var onbox = '<li>В коробке, шт.: </li>' + '<li>' + data[i].gsx$onbox.$t + '</li>';
+                        } else { var onbox = ''; };
+
+                        PageHTML +=
+                            '<div class="price_card">'
+                                + img + name + '<ul>' + code + cost + onbox + '</ul>'
+                            + '</div>';
+                        }
                 }
                 $('.google_table').html(PageHTML);
             }

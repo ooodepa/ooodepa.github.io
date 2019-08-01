@@ -1,12 +1,28 @@
-.PageHTML
-    & > div
+.page__price
+    & > .google_table
         display: flex
         flex-wrap: wrap
-        justify-content: center  
-    &__item
+        justify-content: center
+    & .price_card
         width: 200px
         margin: 8px
         padding: 8px
         box-shadow: 0 0 8px rgba(0,0,0,0.4)
-    &__title
-        color: #06c
+        border-radius: 16px
+        &__img
+            display: flex
+        &__img > img
+            max-width: 100%
+            margin: 0 auto
+        &__title
+            min-height: 72px
+            text-align: center
+            color: #06c
+        & ul
+            margin: 0
+            padding: 0
+            & li
+                display: block
+                // text-align: center
+            & li:nth-child(2n + 1)
+                font-weight: bold
