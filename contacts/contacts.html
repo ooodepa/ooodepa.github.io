@@ -26,20 +26,37 @@ permalink: contacts/
 
             for (var i = 0; i < data.length; i++) {
 
+                if (data[i].gsx$titleicon.$t) {
+                    var titleicon = data[i].gsx$titleicon.$t + ' ';
+                } else {var titleicon = '';};
+
+                if (data[i].gsx$title.$t) {
+                    var title = data[i].gsx$title.$t;
+                } else {var title = '';};
+
+
                 if (data[i].gsx$phone1.$t) {
+                    if (data[i].gsx$phone1title.$t) {
+                        phone1title = data[i].gsx$phone1title.$t;
+                    } else { phone1title = data[i].gsx$phone1.$t };
                     var phone1 =
-                    '<a class="page__button" href="tel: +' + data[i].gsx$phone1.$t + '">+' + data[i].gsx$phone1.$t + '</a>';
+                    '<a class="page__button" href="tel: ' + data[i].gsx$phone1.$t + '">' + phone1title + '</a>';
                 } else {var phone1 = '';};
+
+
+                if (data[i].gsx$phone2.$t) {
+                    if (data[i].gsx$phone2title.$t) {
+                        phone2title = data[i].gsx$phone2title.$t;
+                    } else { phone2title = data[i].gsx$phone2.$t };
+                    var phone2 =
+                    '<a class="page__button" href="tel: ' + data[i].gsx$phone2.$t + '">' + phone2title + '</a>';
+                } else {var phone2 = '';};
+
 
                 if (data[i].gsx$text.$t) {
                     var text =
                         '<center>' + data[i].gsx$text.$t + '</center>';
                 } else {var text = '';};
-
-                if (data[i].gsx$phone2.$t) {
-                    var phone2 =
-                    '<a class="page__button" href="tel: +' + data[i].gsx$phone2.$t + '">+' + data[i].gsx$phone2.$t + '</a>';
-                } else {var phone2 = '';};
 
                 if (data[i].gsx$email.$t) {
                     var email =
@@ -62,7 +79,7 @@ permalink: contacts/
                 } else {var skype = '';};
 
                 PageHTML += '<div>'
-                    + '<h2>' + data[i].gsx$name.$t + '</h2>'
+                    + '<h2>' + titleicon + title + '</h2>'
                     + text
                     + '<div class="page__flex">' + phone1 + phone2 + email + '</div>'
                     + '<div class="page__flex">' + viber + whatsapp + skype + '</div>'
