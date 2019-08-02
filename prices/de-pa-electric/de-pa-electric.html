@@ -15,9 +15,6 @@ permalink: prices/de-pa-electric/
 
 <script>
     $('document').ready(function () {
-        var GoogleLink = "1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0";
-        var UrlWithJSON = 'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/od6/public/values?alt=json';
-
         function getPriceImg(data, i) {
             if (data[i].gsx$img.$t) {
                 var img =
@@ -71,14 +68,19 @@ permalink: prices/de-pa-electric/
                 }
             }
             return PageHTML;
-        }
+        };
 
-        $.getJSON(
-            UrlWithJSON,
-            function (data) {
-                data = data.feed.entry;
-                $('.google_table').html(writePrice(data));
-            }
-        );
+        function getGoogleTable(GoogleLink) {
+            $.getJSON(
+                'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/od6/public/values?alt=json',
+                function (data) {
+                    data = data.feed.entry;
+                    $('.google_table').html(writePrice(data));
+                }
+            );
+        };
+
+        getGoogleTable("1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0");
+
     });
 </script>
