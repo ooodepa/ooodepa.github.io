@@ -26,11 +26,11 @@ permalink: prices/de-pa-electric/
                     if(data[i].gsx$show.$t != 0) {
                         if (data[i].gsx$img.$t) {
                             var img =
-                            '<div class="price_card__img"><img src="' + data[i].gsx$img.$t + '" /></div>';
+                            '<img src="' + data[i].gsx$img.$t + '" />';
                         } else { var img = ''; };
 
                         if (data[i].gsx$name.$t) {
-                            var name = '<div class="price_card__title">' + data[i].gsx$name.$t + '</div>';
+                            var name = data[i].gsx$name.$t;
                         } else { var name = ''; };
 
                         if (data[i].gsx$code.$t) {
@@ -47,7 +47,9 @@ permalink: prices/de-pa-electric/
 
                         PageHTML +=
                             '<div class="price_card">'
-                                + img + name + '<ul>' + code + cost + onbox + '</ul>'
+                                + '<div class="price_card__img">' + img + '</div>'
+                                + '<div class="price_card__title">' + name + '</div>'
+                                + '<ul>' + code + cost + onbox + '</ul>'
                             + '</div>';
                         }
                 }
