@@ -54,7 +54,7 @@ permalink: prices/de-pa-electric/
             return onbox;
         };
 
-        function writePrice(img, name, code, cost, onbox) {
+        function writePrice() {
             var PageHTML = '';
             for (var i = 0; i < data.length; i++) {
                 if (data[i].gsx$show.$t != 0) {
@@ -77,13 +77,7 @@ permalink: prices/de-pa-electric/
             UrlWithJSON,
             function (data) {
                 data = data.feed.entry;
-                $('.google_table').html(writePrice(
-                    getPriceImg(data, i),
-                    getPriceName(data, i),
-                    getPriceCode(data, i),
-                    getPriceCost(data, i),
-                    getPriceOnBox(data, i)
-                ));
+                $('.google_table').html(writePrice());
             }
         );
     });
