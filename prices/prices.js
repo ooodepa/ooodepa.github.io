@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
         return onbox;
     };
 
-    function writePrice(data) {
+    function writePrice(data, series) {
         var PageHTML = '';
         for (var i = 0; i < data.length; i++) {
-            if (data[i].gsx$show.$t != 0) {
+            if (data[i].gsx$show.$t != 0 && data[i].gsx$series.$t == series) {
                 var img = getPriceImg(data, i);
                 var name = getPriceName(data, i);
                 var code = getPriceCode(data, i);
@@ -55,18 +55,36 @@ document.addEventListener("DOMContentLoaded", function () {
         return PageHTML;
     };
 
-    function getGoogleTable(GoogleLink) {
+    function getGoogleTable(GoogleLink, series) {
         $.getJSON(
             'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/od6/public/values?alt=json',
             function (data) {
                 data = data.feed.entry;
-                $('.google_table').html(writePrice(data));
+                $('.google_table').html(writePrice(data, series));
             }
         );
     };
 
-    if (window.location.pathname == "/prices/de-pa-electric/") {
-        getGoogleTable("1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0");
-    }
+    var GoogleTableToken = "1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0";
+    const DE_PA_PRICE_BASE = "/prices/de-pa-electric/";
+    switch (window.location.pathname) {
+        case DE_PA_PRICE_BASE + "star-series/":
+            getGoogleTable(GoogleTableToken, "Звезда"); break;
+        case DE_PA_PRICE_BASE + "pearl-series/":
+            getGoogleTable(GoogleTableToken, "Жемчужина"); break;
+        case DE_PA_PRICE_BASE + "accessories/":
+            getGoogleTable(GoogleTableToken, "Аксессуары"); break;
+        case DE_PA_PRICE_BASE + "group-socket-and-plug/":
+            getGoogleTable(GoogleTableToken, "Разветлители. Тройники"); break;
+        case DE_PA_PRICE_BASE + "ip44-moisture-proof-series/":
+            getGoogleTable(GoogleTableToken, "IP44 вагозащищенных накладных изделий");
+        case DE_PA_PRICE_BASE + "surfase-mounted-socket-series/":
+            getGoogleTable(GoogleTableToken, "Серия розеток накладных с заземлением"); break;
+        case DE_PA_PRICE_BASE + "fuse-boxes/":
+            getGoogleTable(GoogleTableToken, "Коробки под автомать"); break;
+        case DE_PA_PRICE_BASE + "plastic-lighting-fixtures/":
+            getGoogleTable(GoogleTableToken, "Потолочные светильники"); break;
+    };
+    GoogleTableToken = "";
 
 });
