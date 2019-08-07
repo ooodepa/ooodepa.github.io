@@ -9,6 +9,7 @@ permalink: prices/de-pa-electric/
 
 - [Серия Звезда](star-series) 
 - [Серия Жемчужина](pearl-series)
+- [Английская серия](british-system-series)
 - [Аксессуары](accessories)
 - [Разветлители. Тройники](group-socket-and-plug)
 - [IP44 вагозащищенных накладных изделий](ip44-moisture-proof-series)

@@ -72,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
             getGoogleTable(GoogleTableToken, "Звезда"); break;
         case DE_PA_PRICE_BASE + "pearl-series/":
             getGoogleTable(GoogleTableToken, "Жемчужина"); break;
+        case DE_PA_PRICE_BASE + "british-system-series/":
+            getGoogleTable(GoogleTableToken, "Английская серия"); break;
         case DE_PA_PRICE_BASE + "accessories/":
             getGoogleTable(GoogleTableToken, "Аксессуары"); break;
         case DE_PA_PRICE_BASE + "group-socket-and-plug/":
