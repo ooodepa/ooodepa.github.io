@@ -1,4 +1,5 @@
-import './prices.sass';
+import './price-google-table.sass';
+
 document.addEventListener("DOMContentLoaded", function () {
     function getPriceImg(data, i) {
         if (data[i].gsx$img.$t) {
