@@ -1,9 +1,10 @@
 <header class="page__header">
-    <div class="header__container container">
-        {% include Header/Button/Button.html %}
-        {% include Header/PCMenu/PCMenu.html %}
-        {% include Header/Logo/Logo.html %}
+    <div class="container">
+        <div>
+            <div class="page__header-button"></div>
+            {% include Header/Logo/Logo.html %}
+            {% include Header/Button/Button.html %}
+        </div>
+        {% include Header/Nav/Nav.html %}
     </div>
 </header>
-
-{% include Header/MobileMenu/MobileMenu.html %}

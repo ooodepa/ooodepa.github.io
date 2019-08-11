@@ -1,1 +1,0 @@
-import './PCMenu.sass';

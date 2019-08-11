@@ -1,24 +1,20 @@
 @import './../../../src/components/consts/consts.sass'
 
 .page__header-logo
-    float: right
-    width: calc(100% - 2 * 48px)
-    height: 100%
-
-.page__header-logo-link
+    float: left
     display: flex
-    width: 100%
     height: 100%
     justify-content: center
+    & > a
+        display: block
+        height: 100%
+    & > a:hover
+        background-color: rgba(0, 0, 0, .1)
+    & > a > img
+        display: block
+        height: calc(100% - 2px * 2)
+        padding: 2px 16px
 
-.page__header-logo-link:hover
-    background-color: rgba(0, 0, 0, .1)
-
-.page__header-logo-img
-    display: block
-    height: calc(100% - 2px - 2px)
-    padding: 2px 8px
-
-@media (min-width: 1024px)
+@media (max-width: 1024px)
     .page__header-logo
-        width: $logoWidth
+        width: calc(100% - 2 * 48px)
