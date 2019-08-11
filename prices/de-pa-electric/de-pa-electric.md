@@ -5,8 +5,6 @@ description: Прайс DE-PA Electric
 permalink: prices/de-pa-electric/
 ---
 
-[Прайсы](/prices) > [DE-PA Electric](/{{ page.permalink }})
-
 - [Серия Звезда](star-series) 
 - [Серия Жемчужина](pearl-series)
 - [Английская серия](british-system-series)
