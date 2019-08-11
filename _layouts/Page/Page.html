@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="ru">
-    
-{% include Head/Head.html %}
+---
+layout: default
+---
 
-<body>
-    <div class="wrapper">
-        <div class="content">
-            {% include Header/Header.html %}
-            <main>
-                <header>
-                    <h1>{{ page.title }}</h1>
-                </header>
-                <div class="container">
-                    {{ content }}
-                </div>
-            </main>
-        </div>
-        {% include Footer/Footer.html %}
+<main>
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <div class="container">
+        {{ content }}
     </div>
-</body>
-
-</html>
+</main>
