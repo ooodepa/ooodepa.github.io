@@ -2,8 +2,7 @@
 baseurl: ''
 exclude:
   - node_modules
-  - .gitignore
-  - index.js
+  - src
   - package-lock.json
   - package.json
   - README.md
