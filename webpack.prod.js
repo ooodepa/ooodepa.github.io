@@ -8,21 +8,16 @@ let conf = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
-        publicPath: '/dist/'
-    },
-    devServer: {
-        overlay: true,
-        contentBase: path.join(__dirname, '_site'),
-        watchContentBase: true
+        publicPath: '/_site/'
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
-                exclude: '/node_modules/',
+                test: /\.(js|jsx)?$/,
                 use: {
                     loader: "babel-loader"
                 },
+                exclude: path.resolve(__dirname, 'node_modules/'),
             },
             {
                 test: /\.sass$/,
@@ -40,7 +35,7 @@ let conf = {
                                 autoprefixer()
                             ]
                         }
-                    },                    
+                    },
                     {
                         loader: "sass-loader",
                         options: {
@@ -54,22 +49,22 @@ let conf = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-          filename: 'styles.css',
+            filename: 'styles.css',
         }),
         new OptimizeCssAssetsPlugin({
             AssetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano')
-        })
-      ],
+        }),
+    ],
 };
 
 module.exports = (env, options) => {
-    let
-        production = options.mode === 'production';
 
-    conf.devtool = production
-        ? false // ? 'source-map'
-        : 'eval-sourcemap';
+    conf.mode = 'production';
+
+    // conf.devtool = 'source-map';
+    conf.devtool = false;
 
     return conf;
+    
 }

@@ -6,7 +6,8 @@ exclude:
   - package-lock.json
   - package.json
   - README.md
-  - webpack.config.js
+  - webpack.dev.js
+  - webpack.prod.js
 
 # vars
 title: ООО "ДЕ-ПА" электроустановочные изделия, светильники, розетки, гидроизоляция
