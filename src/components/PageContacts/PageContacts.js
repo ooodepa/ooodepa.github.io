@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             data = data.feed.entry;
 
-            console.log(data);
-
             var PageHTML = '';
 
             for (var i = 0; i < data.length; i++) {
