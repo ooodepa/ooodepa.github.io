@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var GoogleTableToken = "1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0";
     const DE_PA_PRICE_BASE = "/prices/de-pa-electric/";
     switch (window.location.pathname) {
+        case '/prices/mono-electric/':
+            getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms', ""); break;
         case DE_PA_PRICE_BASE + "star-series/":
             getGoogleTable(GoogleTableToken, "Звезда"); break;
         case DE_PA_PRICE_BASE + "pearl-series/":
