@@ -7,7 +7,7 @@ description: Прайс DE-PA Electric
 - [Серия Звезда](star-series) 
 - [Серия Жемчужина](pearl-series)
 - [Английская серия](british-system-series)
-- [(BETA) Аксессуары](accessories)
+- [Аксессуары](accessories)
 - [Разветлители. Тройники](group-socket-and-plug)
 - [(BETA) IP44 вагозащищенных накладных изделий](ip44-moisture-proof-series)
 - [(BETA) Серия розеток накладных с заземлением](surfase-mounted-socket-series)
