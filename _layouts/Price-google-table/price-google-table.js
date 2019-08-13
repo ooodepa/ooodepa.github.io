@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         case DE_PA_PRICE_BASE + "group-socket-and-plug/":
             getGoogleTable(GoogleTableToken, "Разветлители. Тройники"); break;
         case DE_PA_PRICE_BASE + "ip44-moisture-proof-series/":
-            getGoogleTable(GoogleTableToken, "IP44 вагозащищенных накладных изделий");
+            getGoogleTable(GoogleTableToken, "IP44 вагозащищенных накладных изделий"); break;
         case DE_PA_PRICE_BASE + "surfase-mounted-socket-series/":
             getGoogleTable(GoogleTableToken, "Серия розеток накладных с заземлением"); break;
         case DE_PA_PRICE_BASE + "fuse-boxes/":
