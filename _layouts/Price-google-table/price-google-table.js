@@ -6,56 +6,45 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function getPriceImg(data, i) {
         if (data[i].gsx$img.$t) {
-            var img =
-                '<img src="' + data[i].gsx$img.$t + '" />';
-        } else { var img = ''; };
-        return img;
+            return '<img src="' + data[i].gsx$img.$t + '" />';
+        } else { return ''; };
     };
 
     function getPriceName(data, i) {
         if (data[i].gsx$name.$t) {
-            var name = data[i].gsx$name.$t;
-        } else { var name = ''; };
-        return name;
+            return data[i].gsx$name.$t;
+        } else { return ''; };
     };
 
     function getPriceCode(data, i) {
         if (data[i].gsx$code.$t) {
-            var code = '<li>Модель: </li>' + '<li>' + data[i].gsx$code.$t + '</li>';
-        } else { var code = ''; };
-        return code;
+            return '<li>Модель: </li>' + '<li>' + data[i].gsx$code.$t + '</li>';
+        } else { return ''; };
     };
 
     function getPriceCost(data, i) {
         if (data[i].gsx$cost.$t) {
-            var cost = '<li>Цена за 1 ед. c НДС: </li>' + '<li>' + data[i].gsx$cost.$t + ' BYN</li>';
-        } else { var cost = ''; };
-        return cost;
+            return '<li>Цена за 1 ед. c НДС: </li>' + '<li>' + data[i].gsx$cost.$t + ' BYN</li>';
+        } else { return ''; };
     };
 
     function getPriceOnBox(data, i) {
         if (data[i].gsx$onbox.$t) {
-            var onbox = '<li>В коробке, шт.: </li>' + '<li>' + data[i].gsx$onbox.$t + '</li>';
-        } else { var onbox = ''; };
-        return onbox;
+            return '<li>В коробке, шт.: </li>' + '<li>' + data[i].gsx$onbox.$t + '</li>';
+        } else { return ''; };
     };
 
     function writePrice(data) {
         var PageHTML = '';
         for (var i = 0; i < data.length; i++) {
             if (data[i].gsx$show.$t != 0) {
-                var img = getPriceImg(data, i);
-                var name = getPriceName(data, i);
-                var code = getPriceCode(data, i);
-                var cost = getPriceCost(data, i);
-                var onbox = getPriceOnBox(data, i);
                 PageHTML += '<div class="price_card">'
-                    + '<div class="price_card__img">' + img + '</div>'
-                    + '<div class="price_card__title">' + name + '</div>'
-                    + '<ul>' + code + cost + onbox + '</ul>'
+                    + '<div class="price_card__img">' + getPriceImg(data, i) + '</div>'
+                    + '<div class="price_card__title">' + getPriceName(data, i) + '</div>'
+                    + '<ul>' + getPriceCode(data, i) + getPriceCost(data, i) + getPriceOnBox(data, i) + '</ul>'
                     + '</div>';
-            }
-        }
+            };
+        };
         return PageHTML;
     };
 
