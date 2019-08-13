@@ -1,6 +1,9 @@
 import './price-google-table.sass';
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
+    
     function getPriceImg(data, i) {
         if (data[i].gsx$img.$t) {
             var img =
@@ -58,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getGoogleTable(GoogleLink, series) {
         $.getJSON(
-            'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/od6/public/values?alt=json',
+            'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/public/values?alt=json',
             function (data) {
                 data = data.feed.entry;
                 $('.google_table').html(writePrice(data, series));
@@ -66,30 +69,50 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     };
 
-    var GoogleTableToken = "1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0";
-    const DE_PA_PRICE_BASE = "/prices/de-pa-electric/";
     switch (window.location.pathname) {
+
         case '/prices/mono-electric/':
-            getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms', ""); break;
-        case DE_PA_PRICE_BASE + "star-series/":
-            getGoogleTable(GoogleTableToken, "Звезда"); break;
-        case DE_PA_PRICE_BASE + "pearl-series/":
-            getGoogleTable(GoogleTableToken, "Жемчужина"); break;
-        case DE_PA_PRICE_BASE + "british-system-series/":
-            getGoogleTable(GoogleTableToken, "Английская серия"); break;
-        case DE_PA_PRICE_BASE + "accessories/":
-            getGoogleTable(GoogleTableToken, "Аксессуары"); break;
-        case DE_PA_PRICE_BASE + "group-socket-and-plug/":
-            getGoogleTable(GoogleTableToken, "Разветлители. Тройники"); break;
-        case DE_PA_PRICE_BASE + "ip44-moisture-proof-series/":
-            getGoogleTable(GoogleTableToken, "IP44 вагозащищенных накладных изделий"); break;
-        case DE_PA_PRICE_BASE + "surfase-mounted-socket-series/":
-            getGoogleTable(GoogleTableToken, "Серия розеток накладных с заземлением"); break;
-        case DE_PA_PRICE_BASE + "fuse-boxes/":
-            getGoogleTable(GoogleTableToken, "Коробки под автомать"); break;
-        case DE_PA_PRICE_BASE + "plastic-lighting-fixtures/":
-            getGoogleTable(GoogleTableToken, "Потолочные светильники"); break;
+            getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms/1', "");
+            break;
+
+        case '/prices/de-pa-electric/star-series/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Звезда");
+            break;
+
+        case '/prices/de-pa-electric/pearl-series/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Жемчужина");
+            break;
+
+        case '/prices/de-pa-electric/british-system-series/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Английская серия");
+            break;
+
+        case '/prices/de-pa-electric/accessories/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Аксессуары");
+            break;
+
+        case '/prices/de-pa-electric/group-socket-and-plug/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Разветлители. Тройники");
+            break;
+
+        case '/prices/de-pa-electric/ip44-moisture-proof-series/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "IP44 вагозащищенных накладных изделий");
+            break;
+
+        case '/prices/de-pa-electric/surfase-mounted-socket-series/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Серия розеток накладных с заземлением");
+            break;
+
+        case '/prices/de-pa-electric/fuse-boxes/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Коробки под автомать");
+            break;
+
+        case '/prices/de-pa-electric/plastic-lighting-fixtures/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Потолочные светильники");
+            break;
+
     };
-    GoogleTableToken = "";
+
+
 
 });
