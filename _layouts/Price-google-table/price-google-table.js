@@ -105,6 +105,10 @@ document.addEventListener("DOMContentLoaded", function () {
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/9');
             break;
 
+        case '/prices/de-pa-electric/cable-trunking/':
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/10');
+            break;
+
     };
 
 
