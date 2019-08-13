@@ -5,33 +5,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     function getPriceImg(data, i) {
-        if (data[i].gsx$img.$t) {
+        if (data[i].gsx$img.$t)
             return '<img src="' + data[i].gsx$img.$t + '" />';
-        } else { return ''; };
+        else
+            return '';
     };
 
     function getPriceName(data, i) {
-        if (data[i].gsx$name.$t) {
+        if (data[i].gsx$name.$t)
             return data[i].gsx$name.$t;
-        } else { return ''; };
+        else
+            return '';
     };
 
     function getPriceCode(data, i) {
-        if (data[i].gsx$code.$t) {
+        if (data[i].gsx$code.$t)
             return '<li>Модель: </li>' + '<li>' + data[i].gsx$code.$t + '</li>';
-        } else { return ''; };
+        else
+            return '';
     };
 
     function getPriceCost(data, i) {
-        if (data[i].gsx$cost.$t) {
+        if (data[i].gsx$cost.$t)
             return '<li>Цена за 1 ед. c НДС: </li>' + '<li>' + data[i].gsx$cost.$t + ' BYN</li>';
-        } else { return ''; };
+        else
+            return '';
     };
 
     function getPriceOnBox(data, i) {
-        if (data[i].gsx$onbox.$t) {
+        if (data[i].gsx$onbox.$t)
             return '<li>В коробке, шт.: </li>' + '<li>' + data[i].gsx$onbox.$t + '</li>';
-        } else { return ''; };
+        else
+            return '';
     };
 
     function writePrice(data) {
