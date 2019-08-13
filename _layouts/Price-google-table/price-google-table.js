@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
         return onbox;
     };
 
-    function writePrice(data, series) {
+    function writePrice(data) {
         var PageHTML = '';
         for (var i = 0; i < data.length; i++) {
-            if (data[i].gsx$show.$t != 0 && data[i].gsx$series.$t == series) {
+            if (data[i].gsx$show.$t != 0) {
                 var img = getPriceImg(data, i);
                 var name = getPriceName(data, i);
                 var code = getPriceCode(data, i);
@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
         return PageHTML;
     };
 
-    function getGoogleTable(GoogleLink, series) {
+    function getGoogleTable(GoogleLink) {
         $.getJSON(
             'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/public/values?alt=json',
             function (data) {
                 data = data.feed.entry;
-                $('.google_table').html(writePrice(data, series));
+                $('.google_table').html(writePrice(data));
             }
         );
     };
@@ -72,43 +72,43 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (window.location.pathname) {
 
         case '/prices/mono-electric/':
-            getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms/1', "");
+            getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms/1');
             break;
 
         case '/prices/de-pa-electric/star-series/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Звезда");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1');
             break;
 
         case '/prices/de-pa-electric/pearl-series/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Жемчужина");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/2');
             break;
 
         case '/prices/de-pa-electric/british-system-series/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Английская серия");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/3');
             break;
 
         case '/prices/de-pa-electric/accessories/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Аксессуары");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/4');
             break;
 
         case '/prices/de-pa-electric/group-socket-and-plug/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Разветлители. Тройники");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/5');
             break;
 
         case '/prices/de-pa-electric/ip44-moisture-proof-series/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "IP44 вагозащищенных накладных изделий");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/6');
             break;
 
         case '/prices/de-pa-electric/surfase-mounted-socket-series/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Серия розеток накладных с заземлением");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/7');
             break;
 
         case '/prices/de-pa-electric/fuse-boxes/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Коробки под автомать");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/8');
             break;
 
         case '/prices/de-pa-electric/plastic-lighting-fixtures/':
-            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1', "Потолочные светильники");
+            getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/9');
             break;
 
     };
