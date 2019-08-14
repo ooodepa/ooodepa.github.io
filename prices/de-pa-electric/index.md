@@ -13,4 +13,4 @@ description: Прайс DE-PA Electric
 7. [Серия розеток накладных с заземлением](surfase-mounted-socket-series)
 8. [Коробки под автомать](fuse-boxes)
 9. [(BETA) Потолочные светильники](plastic-lighting-fixtures)
-10. [(BETA) Кабельные каналы](cable-trunking)
+10. [Кабельные каналы](cable-trunking)
