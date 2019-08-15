@@ -1,5 +1,5 @@
 ---
-layout: Docs/Docs
+layout: Page/Page
 title: Каталоги
 description: Каталоги
 permalink: katalogs/

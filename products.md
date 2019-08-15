@@ -1,5 +1,5 @@
 ---
-layout: Docs/Docs
+layout: Page/Page
 title: Продукция
 description: Продукция
 permalink: products/
