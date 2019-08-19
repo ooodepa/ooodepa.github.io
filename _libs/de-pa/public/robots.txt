@@ -1,7 +1,3 @@
-Host: https://de-pa.by
-
 User-agent: *
-Sitemap: https://de-pa.by/sitemap.xml
-
-User-agent: Yandex
+Host: https://de-pa.by
 Sitemap: https://de-pa.by/sitemap.xml
