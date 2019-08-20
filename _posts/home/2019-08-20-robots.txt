@@ -1,3 +1,7 @@
+---
+permalink: robots
+---
+
 User-agent: *
 Host: https://ooodepa.github.io
 Sitemap: https://ooodepa.github.io/sitemap.xml
