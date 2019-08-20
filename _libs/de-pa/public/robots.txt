@@ -1,3 +1,0 @@
-User-agent: *
-Host: https://de-pa.by
-Sitemap: https://de-pa.by/sitemap.xml
