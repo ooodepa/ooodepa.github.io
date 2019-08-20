@@ -1,0 +1,14 @@
+---
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset>
+
+{% for element in site.posts %}
+<url>
+  <loc>{{ site.site_url }}/{{ element.permalink }}</loc>
+</url>
+{% endfor%}
+
+</urlset>
