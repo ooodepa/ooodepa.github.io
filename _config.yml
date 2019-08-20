@@ -13,5 +13,7 @@ exclude:
 title: ООО "ДЕ-ПА" электроустановочные изделия, светильники, розетки, гидроизоляция
 description: ...
 authors: PavelGalanin2001
+# site_url: https://de-pa.by
+site_url: https://ooodepa.github.io
 version_CSS: 2019.08.20-20.05
 version_JS: 2019.08.20-20.05

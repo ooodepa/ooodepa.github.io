@@ -3,5 +3,5 @@ permalink: robots
 ---
 
 User-agent: *
-Host: https://ooodepa.github.io
-Sitemap: https://ooodepa.github.io/sitemap.xml
+Host: {{ site.site_url }}
+Sitemap: {{ site.site_url }}/sitemap.xml
