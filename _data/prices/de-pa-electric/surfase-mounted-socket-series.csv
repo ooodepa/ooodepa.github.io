@@ -1,10 +1,10 @@
 Show,Code,Name,Cost,OnBox,Img
-1,70001 white,Розетка круглая накладная без заземлен.,1.73,200,img/70001.png
-1,70001 black,Розетка круглая накладная без заземлен. (Черная),1.73,200,img/70001.png
-1,70101 white,Розетка круглая накладная с заземлен.,1.94,150,img/70101.png
-1,70101 black,Розетка круглая накладная с заземлен. (Черная),1.94,150,img/70101.png
-1,70102,Розетка накладная с заземлен.,3.11,120,img/70102.png
-1,80000,Влагозащищенная розетка накладная без заземлен.,3.17,120,img/80000.png
-1,80002,Влагозащищенная розетка накладная без заземлен. c защитой для детей,3.41,120,img/80000.png
-1,81301,Розетка мебельная сзаземлен.,4.43,150,img/81301.png
-1,81302,Розетка встраевая с выкл. с заземлен.,4.43,150,img/81301.png
+1,70001 white,Розетка круглая накладная без заземлен.,1.73,200,/dist/images/de-pa-electric/surfase-mounted-socket-series/70001.png
+1,70001 black,Розетка круглая накладная без заземлен. (Черная),1.73,200,/dist/images/de-pa-electric/surfase-mounted-socket-series/70001.png
+1,70101 white,Розетка круглая накладная с заземлен.,1.94,150,/dist/images/de-pa-electric/surfase-mounted-socket-series/70101.png
+1,70101 black,Розетка круглая накладная с заземлен. (Черная),1.94,150,/dist/images/de-pa-electric/surfase-mounted-socket-series/70101.png
+1,70102,Розетка накладная с заземлен.,3.11,120,/dist/images/de-pa-electric/surfase-mounted-socket-series/70102.png
+1,80000,Влагозащищенная розетка накладная без заземлен.,3.17,120,/dist/images/de-pa-electric/surfase-mounted-socket-series/80000.png
+1,80002,Влагозащищенная розетка накладная без заземлен. c защитой для детей,3.41,120,/dist/images/de-pa-electric/surfase-mounted-socket-series/80000.png
+1,81301,Розетка мебельная сзаземлен.,4.43,150,/dist/images/de-pa-electric/surfase-mounted-socket-series/81301.png
+1,81302,Розетка встраевая с выкл. с заземлен.,4.43,150,/dist/images/de-pa-electric/surfase-mounted-socket-series/81301.png
