@@ -58,14 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
             'https://spreadsheets.google.com/feeds/list/' + GoogleLink + '/public/values?alt=json',
             function (data) {
                 data = data.feed.entry;
-                $('.google_table').html(writePrice(data));
+                document.querySelector('.google_table').innerHTML = '<div class="page__price"></div>';
+                $('.page__price').html(writePrice(data));
             }
         );
     };
 
-    switch (window.location.pathname) {
+    switch (window.location.hash) {
 
-        case '/prices/mono-electric/':
+        case '#/prices/mono-electric':
             getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms/1');
             break;
 
