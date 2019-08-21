@@ -70,43 +70,43 @@ document.addEventListener("DOMContentLoaded", function () {
             getGoogleTable('1bxCxmZZPz0vLmda8pp262ZQTrqtzmgeV4yBqrcPY1Ms/1');
             break;
 
-        case '/prices/de-pa-electric/star-series/':
+        case '#/prices/de-pa-electric/star-series':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/1');
             break;
 
-        case '/prices/de-pa-electric/pearl-series/':
+        case '#/prices/de-pa-electric/pearl-series':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/2');
             break;
 
-        case '/prices/de-pa-electric/british-system-series/':
+        case '#/prices/de-pa-electric/british-system-series':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/3');
             break;
 
-        case '/prices/de-pa-electric/accessories/':
+        case '#/prices/de-pa-electric/accessories':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/4');
             break;
 
-        case '/prices/de-pa-electric/group-socket-and-plug/':
+        case '#/prices/de-pa-electric/group-socket-and-plug':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/5');
             break;
 
-        case '/prices/de-pa-electric/ip44-moisture-proof-series/':
+        case '#/prices/de-pa-electric/ip44-moisture-proof-series':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/6');
             break;
 
-        case '/prices/de-pa-electric/surfase-mounted-socket-series/':
+        case '#/prices/de-pa-electric/surfase-mounted-socket-series':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/7');
             break;
 
-        case '/prices/de-pa-electric/fuse-boxes/':
+        case '#/prices/de-pa-electric/fuse-boxes':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/8');
             break;
 
-        case '/prices/de-pa-electric/plastic-lighting-fixtures/':
+        case '#/prices/de-pa-electric/plastic-lighting-fixtures':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/9');
             break;
 
-        case '/prices/de-pa-electric/cable-trunking/':
+        case '#/prices/de-pa-electric/cable-trunking':
             getGoogleTable('1i5cv8kWgXYUnbdUoFf2RN6nTFQmKoFRzYcKDg9IVAj0/10');
             break;
 
