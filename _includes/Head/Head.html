@@ -2,9 +2,9 @@
     {% include Head/Meta/Meta.html %}
     <title>{{ page.title }} | {{ site.title }}</title>
     {% include Head/Favicons/Favicons.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/dist/styles.css?ver={{ site.version_CSS }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/dist/styles.css?ver={{ site.time | date: '%Y-%m-%d_%H-%M' }}">
     <script src="{{ site.baseurl }}/dist/libs/jquery/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/dist/main.js?ver={{ site.version_JS }}"></script>
+    <script src="{{ site.baseurl }}/dist/main.js?ver={{ site.time | date: '%Y-%m-%d_%H-%M' }}"></script>
     <link rel="stylesheet" href="{{ site.baseurl }}/dist/libs/bootstrap/dist/css/bootstrap.min.css" />
     <script src="{{ site.baseurl }}/dist/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ site.baseurl }}/dist/libs/fontawesome-free-5.9.0-web/css/all.min.css" />
