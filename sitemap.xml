@@ -10,9 +10,12 @@
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 >
 
-{% for element in site.posts %}
+{% for post in site.posts %}
 <url>
-  <loc>{{ site.site_url }}/{{ element.permalink }}</loc>
+  <loc>{{ site.site_url }}{{ post.url }}</loc>
+  <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
 </url>
 {% endfor%}
 
