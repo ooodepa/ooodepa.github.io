@@ -47,6 +47,11 @@ let conf = {
 
         ]
     },
+    resolve: {
+        alias: {
+            cSASS: path.resolve(__dirname, 'src/consts/consts.sass')
+        }
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'styles.css',

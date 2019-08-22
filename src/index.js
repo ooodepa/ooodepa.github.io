@@ -1,4 +1,4 @@
-import './components/consts/consts';
+import './consts/';
 import './../_includes/components';
 import './../_layouts/layouts';
 
