@@ -1,15 +1,13 @@
 ---
 layout: Price-google-table/Price-google-table
-title: Коробки под автомать DE-PA Electric
-description: Коробки под автомать DE-PA Electric
-permalink: prices/de-pa-electric/fuse-boxes/
+title: Серия Звезда DE-PA Electric
+description: Серия Звезда DE-PA Electric
+permalink: products/de-pa-electric/star-series/
 category: price-de-pa
 ---
 
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/prices/de-pa-electric/fuse-boxes">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
-
 <div class="page__price">
-    {% for i in site.data.prices.de-pa-electric.fuse-boxes %}
+    {% for i in site.data.prices.de-pa-electric.star-series %}
     <div class="price_card">
         <div class="price_card__img">
             <img src="{{ i.Img }}" alt="">

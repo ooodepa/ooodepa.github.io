@@ -2,11 +2,9 @@
 layout: Price-google-table/Price-google-table
 title: Английская серия DE-PA Electric
 description: Английская серия DE-PA Electric
-permalink: prices/de-pa-electric/british-system-series/
+permalink: products/de-pa-electric/british-system-series/
 category: price-de-pa
 ---
-
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/prices/de-pa-electric/british-system-series">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
 
 <div class="page__price">
     {% for i in site.data.prices.de-pa-electric.british-system-series %}

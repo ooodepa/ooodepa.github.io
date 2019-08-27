@@ -1,15 +1,13 @@
 ---
 layout: Price-google-table/Price-google-table
-title: Аксессуары DE-PA Electric
-description: Аксессуары DE-PA Electric
-permalink: prices/de-pa-electric/accessories/
+title: Потолочные светильники DE-PA Electric
+description: Потолочные светильники DE-PA Electric
+permalink: products/de-pa-electric/plastic-lighting-fixtures/
 category: price-de-pa
 ---
 
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/prices/de-pa-electric/accessories">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
-
 <div class="page__price">
-    {% for i in site.data.prices.de-pa-electric.accessories %}
+    {% for i in site.data.prices.de-pa-electric.plastic-lighting-fixtures %}
     <div class="price_card">
         <div class="price_card__img">
             <img src="{{ i.Img }}" alt="">
