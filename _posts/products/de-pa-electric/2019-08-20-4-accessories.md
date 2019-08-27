@@ -1,15 +1,13 @@
 ---
 layout: Price-google-table/Price-google-table
-title: IP44 вагозащищенных накладных изделий DE-PA Electric
-description: IP44 вагозащищенных накладных изделий DE-PA Electric
-permalink: prices/de-pa-electric/ip44-moisture-proof-series/
+title: Аксессуары DE-PA Electric
+description: Аксессуары DE-PA Electric
+permalink: products/de-pa-electric/accessories/
 category: price-de-pa
 ---
 
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/prices/de-pa-electric/ip44-moisture-proof-series">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
-
 <div class="page__price">
-    {% for i in site.data.prices.de-pa-electric.ip44-moisture-proof-series %}
+    {% for i in site.data.prices.de-pa-electric.accessories %}
     <div class="price_card">
         <div class="price_card__img">
             <img src="{{ i.Img }}" alt="">

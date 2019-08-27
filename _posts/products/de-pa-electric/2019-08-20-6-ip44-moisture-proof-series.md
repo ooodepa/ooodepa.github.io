@@ -1,18 +1,13 @@
 ---
 layout: Price-google-table/Price-google-table
-title: Прайс MONO Electric
-description: Прайс MONO Electric
-permalink: prices/mono-electric/
+title: IP44 вагозащищенных накладных изделий DE-PA Electric
+description: IP44 вагозащищенных накладных изделий DE-PA Electric
+permalink: products/de-pa-electric/ip44-moisture-proof-series/
+category: price-de-pa
 ---
 
-<ul>
-    <li><a href="http://docs.de-pa.by/prices/price-mono-electric.pdf">Скачать в PDF</a></li>
-</ul>
-
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/prices/mono-electric">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
-
 <div class="page__price">
-    {% for i in site.data.prices.mono-electric.mono-electric  %}
+    {% for i in site.data.prices.de-pa-electric.ip44-moisture-proof-series %}
     <div class="price_card">
         <div class="price_card__img">
             <img src="{{ i.Img }}" alt="">
@@ -31,5 +26,3 @@ permalink: prices/mono-electric/
     </div>
     {% endfor %}
 </div>
-
-<hr>

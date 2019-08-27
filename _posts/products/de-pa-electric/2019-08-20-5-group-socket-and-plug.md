@@ -1,15 +1,13 @@
 ---
 layout: Price-google-table/Price-google-table
-title: Серия Жемчужина DE-PA Electric
-description: Серия Жемчужина DE-PA Electric
-permalink: prices/de-pa-electric/pearl-series/
+title: Разветлители. Тройники DE-PA Electric
+description: Разветлители. Тройники DE-PA Electric
+permalink: products/de-pa-electric/group-socket-and-plug/
 category: price-de-pa
 ---
 
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/prices/de-pa-electric/pearl-series">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
-
 <div class="page__price">
-    {% for i in site.data.prices.de-pa-electric.pearl-series %}
+    {% for i in site.data.prices.de-pa-electric.group-socket-and-plug %}
     <div class="price_card">
         <div class="price_card__img">
             <img src="{{ i.Img }}" alt="">

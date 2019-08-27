@@ -5,13 +5,9 @@ description: Контакты
 permalink: contacts/
 ---
 
-<hr>
-<p style="text-align: center;">Online данные можно смотреть <a href="{{ site.baseurl }}/online/#/contacts">тут</a>. Если же страница не работает, то оставайтесь на этой.</p>
 <hr />
 
-
-{% for i in site.data.contacts.contacts  %}
-<div>
+{% for i in site.data.contacts.contacts  %}<div>
     <h2>{{ i.Title_icon }} {{ i.Title }}</h2>
     <p style="text-align: center;">{{ i.Text }}</p>
     <div class="page__flex">
@@ -24,6 +20,4 @@ permalink: contacts/
         {% if i.WhatsApp %}<a class="page__button--whats-app fab fa-whatsapp" href="https://api.whatsapp.com/send?phone={{ i.WhatsApp }}"></a>{% endif %}
         {% if i.Skype %}<a class="page__button--skype fab fa-skype" href="skype:{{ i.Skype }}?call"></a>{% endif %}
     </div>
-</div>
-<hr />
-{% endfor %}
+</div><hr />{% endfor %}
