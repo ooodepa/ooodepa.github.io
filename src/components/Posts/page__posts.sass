@@ -1,0 +1,34 @@
+@import 'cSASS'
+
+.page__posts
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    & > a:hover
+        text-decoration: none
+
+.posts
+    &__post
+        width: 200px
+        margin: 16px
+        border: 1px solid grey
+        padding: 8px
+        border-radius: 4px
+    &__post:hover
+        background-color: rgba(209, 209, 209, 1)
+    &__img
+        height: 100px
+        position: relative
+        img
+            margin: auto auto!important
+            max-width: 100%
+            max-height: 100%
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+    &__name
+        text-align: center
+        color: $siteColor
+        height: 50px
