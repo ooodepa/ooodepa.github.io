@@ -1,0 +1,21 @@
+---
+layout: Page/Page
+title: Прайсы
+description: Прайсы
+permalink: prices/
+---
+
+<div class="page__posts">
+    {% for element in site.data.prices.prices %}
+    <a href="{{ element.Link }}">
+        <div class="posts__post">
+            <div class="posts__img">
+                <img src="{{ element.ImgSrc }}" alt="{{ element.ImgAlt }}" />
+            </div>
+            <div class="posts__name">
+                {{ element.Name }}
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
