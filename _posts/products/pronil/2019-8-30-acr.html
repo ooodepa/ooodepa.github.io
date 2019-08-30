@@ -1,0 +1,24 @@
+---
+layout: Page/Page
+title: ACR Hydrophilic Waterstop Tape, Plugs and Rings
+description: New generation high performance waterstops which expanding up to 900% when in contact with water.
+permalink: products/pronil/acr/
+---
+
+<p style="text-align: center;">New generation high performance waterstops which expanding up to 900% when in contact with water.</p>
+
+<div class="page__posts">
+    {% for element in site.data.products.pronil.arc.data %}
+        <div class="posts__post" style="width: 320px;">
+            <div class="posts__img info-posts__img">
+                <img src="{{ element.ImgSrc }}" alt="{{ element.ImgAlt }}" />
+            </div>
+            <div class="posts__name">
+                {{ element.Name }}
+            </div>
+            <ul class="posts__list">{% for li in element.Description %}
+                <li>{{ li.block[0] }}<b>{{ li.block[1]}}</b></li>
+            {% endfor %}</ul>
+        </div>
+    {% endfor %}
+</div>
