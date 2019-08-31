@@ -18,9 +18,11 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
+    "jekyll": "jekyll s",
+    "jekyll-clean": "jekyll clean",
+    "jekyll-build": "JEKYLL_ENV=production jekyll b",
     "dev": "webpack -w --config webpack.dev.js",
     "prod": "webpack --config webpack.prod.js",
-    "jekyll": "jekyll s",
-    "clean": "jekyll clean"
+    "build": "npm run jekyll-clean; npm run jekyll-build"
   }
 }

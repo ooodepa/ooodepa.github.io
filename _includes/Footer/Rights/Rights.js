@@ -1,5 +1,3 @@
-import './Rights.sass';
-
 document.addEventListener("DOMContentLoaded", function () {
     var Data = new Date();
     var Year = Data.getFullYear();
@@ -18,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         case 9: fMonth = "Октябрь"; break;
         case 10: fMonth = "Ноябрь"; break;
         case 11: fMonth = "Декабрь"; break;
-    }
+    };
 
-    document.getElementById('footer__rights').innerHTML = `ООО "ДЕ-ПА"<br />Июнь 2017 - ${fMonth} ${Year}`;
+    document.getElementById('footer__rights').innerHTML = `Июнь 2017 - ${fMonth} ${Year}`;
+
 });
