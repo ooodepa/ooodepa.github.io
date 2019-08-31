@@ -1,0 +1,79 @@
+- Name: ACR-300 Hydrophilic Waterstop Tape
+  ImgSrc: /dist/images/pronil/arc/pronil-acr-300.jpg
+  ImgAlt: 
+  Description:
+    - block:
+      - "Tap water, wet/dry difference "
+      - "≥ 300%"
+    - block:
+      - "Concrete water (14 days) "
+      - "≥ 200%"
+    - block:
+      - "3% salt water (14 days) "
+      - "≥ 100%"
+    - block:
+      - "Цвет: "
+      - "красный"
+
+- Name: ACR-600 Hydrophilic Waterstop Tape
+  ImgSrc: /dist/images/pronil/arc/pronil-acr-600.jpg
+  ImgAlt: 
+  Description:
+    - block:
+      - "Tap water, wet/dry difference "
+      - "≥ 600%"
+    - block:
+      - "Concrete water (14 days) "
+      - "≥ 400%"
+    - block:
+      - "3% salt water (14 days) "
+      - "≥ 200%"
+    - block:
+      - "Цвет: "
+      - "жёлтый"
+
+- Name: ACR-900 Hydrophilic Waterstop Tape
+  ImgSrc: /dist/images/pronil/arc/pronil-acr-900.jpg
+  ImgAlt: 
+  Description:
+    - block:
+      - "Tap water, wet/dry difference "
+      - "≥ 1300%"
+    - block:
+      - "Rain water (14 days) "
+      - "≥ 900%"
+    - block:
+      - "Concrete water (14 days) "
+      - "≥ 600%"
+    - block:
+      - "3% salt water (14 days) "
+      - "≥ 200%"
+    - block:
+      - "5% salt water (14 days) "
+      - "≥ 260%"
+    - block:
+      - "10% salt water (14 days) "
+      - "≥ 240%"
+    - block:
+      - "Water pressure resistance (14 days): "
+      - "7 bar"
+    - block:
+      - "Цвет: "
+      - "синий"
+
+- Name: PLUGS & RINGS
+  ImgSrc: /dist/images/pronil/arc/pronil-acr-hydrophilic-waterstop-plugs-rings.jpg
+  ImgAlt: 
+  Description:
+    - block:
+      - "Day 7 "
+      - "≥ 300%"
+    - block:
+      - "Wet/dry difference "
+      - "≥ 300%"
+    - block:
+      - "Water pressure resistance (14 days): "
+      - "7 bar"
+    - block:
+      - "Цвет: "
+      - "красный, синий"
