@@ -16,6 +16,7 @@ collections:
 # vars
 title: ООО "ДЕ-ПА" электроустановочные изделия, светильники, розетки, гидроизоляция
 description: ...
-authors: PavelGalanin2001
+author: PavelGalanin2001
+site-author: ООО "ДЕ-ПА"
 # site_url: https://de-pa.by
 site_url: https://ooodepa.github.io
