@@ -1,4 +1,4 @@
-import './Header/Header';
-import './Carousel/Carousel';
-import './Footer/';
+import './Header/';
 import './BreadCrumbs/';
+import './Carousel/';
+import './Footer/';
