@@ -6,9 +6,9 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 let conf = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, '_public/dist'),
+        path: path.resolve(__dirname, '_site/dist'),
         filename: 'main.js',
-        publicPath: '/_site/'
+        publicPath: path.resolve(__dirname, '_site'),
     },
     module: {
         rules: [
@@ -17,7 +17,7 @@ let conf = {
                 use: {
                     loader: "babel-loader"
                 },
-                exclude: path.resolve(__dirname, 'node_modules/'),
+                exclude: path.resolve(__dirname, 'node_modules'),
             },
             {
                 test: /\.sass$/,
@@ -58,8 +58,7 @@ let conf = {
         }),
         new BrowserSyncPlugin({
             files: [
-                './_site/**/*.html',
-                './_site/**/*.md',
+                path.resolve(__dirname, '_site/**/*.html'),
             ],
             proxy: '127.0.0.1:4000/',
             open: false,

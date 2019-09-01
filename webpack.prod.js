@@ -4,11 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 let conf = {
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, 'src/index.js'),
     output: {
         path: path.resolve(__dirname, '_public/dist'),
         filename: 'main.js',
-        publicPath: '/_site/'
     },
     module: {
         rules: [
@@ -17,7 +16,7 @@ let conf = {
                 use: {
                     loader: "babel-loader"
                 },
-                exclude: path.resolve(__dirname, 'node_modules/'),
+                exclude: path.resolve(__dirname, 'node_modules'),
             },
             {
                 test: /\.sass$/,
