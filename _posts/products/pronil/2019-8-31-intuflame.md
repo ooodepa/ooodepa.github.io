@@ -1,5 +1,5 @@
 ---
-layout: Page/Page
+layout: page
 title: INTUFLAME Intumescent Fire Strips
 description: Certified strip to prevent air circulation and the escape of hot gases and smoke for fire doors and buildings.
 permalink: products/pronil/intuflame/
