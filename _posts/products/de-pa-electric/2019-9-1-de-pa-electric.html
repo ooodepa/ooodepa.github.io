@@ -5,6 +5,8 @@ description: DE-PA Electric. Продукция
 permalink: products/de-pa-electric/
 ---
 
-<ol>{% for i in site.categories.price-de-pa reversed %}
+<ol>
+    {% for i in site.categories.price-de-pa reversed %}
     <li><a href="{{ site.baseurl }}/{{ i.permalink }}">{{ i.title }}</a></li>
-{% endfor %}</ol>
+    {% endfor %}
+</ol>
