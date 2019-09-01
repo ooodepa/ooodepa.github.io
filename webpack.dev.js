@@ -17,7 +17,7 @@ let conf = {
                 use: {
                     loader: "babel-loader"
                 },
-                exclude: path.resolve(__dirname, 'node_modules/'),
+                exclude: path.resolve(__dirname, 'node_modules'),
             },
             {
                 test: /\.sass$/,
