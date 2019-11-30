@@ -1,0 +1,25 @@
+---
+layout: page
+title: Luminare | Потолочные светильники маленькие прямоугольные влагозащищенные
+description: Luminare | Потолочные светильники маленькие прямоугольные влагозащищенные (прозрачные/непрозрачные, пластик белый серый, чёрный)
+permalink: products/de-pa-electric/plastic-lighting-fixtures/luminare/
+category: price-de-pa-plastic-lighting-fixtures
+---
+
+<div class="page__posts">
+    {% for i in site.data.prices.de-pa-electric.plastic-lighting-fixtures-luminare %}
+    <div class="posts__post">
+        <div class="posts__img">
+            <img src="{{ i.Img }}" alt="">
+        </div>
+        <div class="posts__name">
+            {{ i.Name }}
+        </div>
+        <ul class="posts__list">
+            <li>Модель: <b>{{ i.Code }}</b></li>
+            <li>Цена за 1 ед. c НДС: <b>{{ i.Cost }} BYN</b></li>
+            <li>В коробке, шт.: <b>{{ i.OnBox }}</b></li>
+        </ul>
+    </div>
+    {% endfor %}
+</div>

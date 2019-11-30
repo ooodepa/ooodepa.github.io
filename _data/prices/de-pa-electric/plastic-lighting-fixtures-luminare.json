@@ -1,0 +1,44 @@
+[
+    {
+        "Code": 95044,
+        "Name": "Светильник потолочный мален. прямоугол. влагозащищен. мах 26 watt (ESL) Е27 (прозрач.) (белый) (пластик)",
+        "Cost": 15.04,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/luminare/95044.jpg"
+    },
+    {
+        "Code": "95044-1",
+        "Name": "Светильник потолочный мален. прямоугол. влагозащищен. мах 26 watt (ESL) Е27 (прозрач.) (серый) (пластик)",
+        "Cost": 15.04,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/luminare/95044-1.jpg"
+    },
+    {
+        "Code": "95044-2",
+        "Name": "Светильник потолочный мален. прямоугол. влагозащищен. мах 26 watt (ESL) Е27 (прозрач.) (черный) (пластик)",
+        "Cost": 15.04,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/luminare/95044.jpg"
+    },
+    {
+        "Code": 95045,
+        "Name": "Светильник потолочный мален. прямоугол. влагозащищен. мах 26 watt (ESL) Е27(непрозрач.) (белый) (пластик)",
+        "Cost": 15.04,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/luminare/95045.jpg"
+    },
+    {
+        "Code": "95045-1",
+        "Name": "Светильник потолочный мален. прямоугол. влагозащищен. мах 26 watt (ESL) Е27 (непрозрач.) (серый) (пластик)",
+        "Cost": 15.04,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/luminare/95045.jpg"
+    },
+    {
+        "Code": "95045-2",
+        "Name": "Светильник потолочный мален. прямоугол. влагозащищен. мах 26 watt (ESL) Е27 (непрозрач.) (черный) (пластик)",
+        "Cost": 15.04,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/luminare/95045-2.jpg"
+    }
+]
