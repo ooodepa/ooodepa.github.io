@@ -1,0 +1,86 @@
+[
+    {
+        "Code": 95038,
+        "Name": "Светильник потолочный мален.овальный влагозащищен. мах 26 watt (esl) Е27 (прозрач.) (белый) (пластик)",
+        "Cost": 17.26,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-transperent-white(95038-95046).jpg"
+    },
+    {
+        "Code": "95038-1",
+        "Name": "Светильник потолочный мален. овальный влагозащищен. мах 26 watt (esl) Е27(прозрач.) (серый) (пластик)",
+        "Cost": 17.26,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-transperent-grey(95038-1-95046-1).jpg"
+    },
+    {
+        "Code": "95038-2",
+        "Name": "Светильник потолочный мален. овальный влагозащищен. мах 26 watt (esl) Е27 (прозрач.) (черный) (пластик)",
+        "Cost": 17.26,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-transperent-black(95038-2-95046-2).jpg"
+    },
+    {
+        "Code": 95039,
+        "Name": "Светильник потолочный мален. овальный влагозащищен. мах 26 watt (esl) Е27 (непрозрач.) (белый) (пластик)",
+        "Cost": 17.26,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-opac-white(95039-95047).jpg"
+    },
+    {
+        "Code": "95039-1",
+        "Name": "Светильник потолочный мален. овальный влагозащищен. мах 26 watt (esl) Е27 (непрозрач.) (серый) (пластик)",
+        "Cost": 17.26,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-opac-grey(95039-1-95047-1).jpg"
+    },
+    {
+        "Code": "95039-2",
+        "Name": "Светильник потолочный мален. овальный влагозащищен. мах 26 watt (esl) Е27(непрозрач.) (черный) (пластик)",
+        "Cost": 17.26,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-opac-black(95039-2-95047-2).jpg"
+    },
+    {
+        "Code": 95046,
+        "Name": "Светильник потолочный кругл. влагозащищен. мах 26 watt (ESL) Е27 (прозрач.) (белый) (пластик)",
+        "Cost": 22.99,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-transperent-white(95038-95046).jpg"
+    },
+    {
+        "Code": "95046-1",
+        "Name": "Светильник потолочный кругл. влагозащищен. мах 26 watt (ESL) Е27 (прозрач.) (серый) (пластик)",
+        "Cost": 22.99,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-transperent-grey(95038-1-95046-1).jpg"
+    },
+    {
+        "Code": "95046-2",
+        "Name": "Светильник потолочный кругл. влагозащищен. мах 26 watt (ESL) Е27 (прозрач.) (черный) (пластик)",
+        "Cost": 22.99,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-transperent-black(95038-2-95046-2).jpg"
+    },
+    {
+        "Code": 95047,
+        "Name": "Светильник потолочный кругл. влагозащищен. мах 26 watt (ESL) Е27 (непрозрач.) (белый) (пластик)",
+        "Cost": 22.99,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-opac-white(95039-95047).jpg"
+    },
+    {
+        "Code": "95047-1",
+        "Name": "Светильник потолочный кругл. влагозащищен. мах 26 watt (ESL) Е27 (непрозрач.) (серый) (пластик)",
+        "Cost": 22.99,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-opac-grey(95039-1-95047-1).jpg"
+    },
+    {
+        "Code": "95047-2",
+        "Name": "Светильник потолочный кругл. влагозащищен. мах 26 watt (ESL) Е27 (непрозрач.) (черный) (пластик)",
+        "Cost": 22.99,
+        "OnBox": 10,
+        "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/oval/oval-opac-black(95039-2-95047-2).jpg"
+    }
+]
