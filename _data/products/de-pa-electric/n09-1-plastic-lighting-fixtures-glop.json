@@ -194,5 +194,19 @@
     "Cost": 7.74,
     "OnBox": 40,
     "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/glop/glop-4-95015-4.jpg"
+  },
+  {
+    "Code": "95018-1",
+    "Name": "Светильник маленькйй потолочный мах 26 watt (esl) (пластик)(белый)",
+    "Cost": 4.43,
+    "OnBox": 40,
+    "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/glop/mini-glop-1-95018-1.jpg"
+  },
+  {
+    "Code": "95018-2",
+    "Name": "Светильник маленькйй потолочный мах 26 watt (esl) (пластик)(белый)",
+    "Cost": 4.43,
+    "OnBox": 40,
+    "Img": "/dist/images/de-pa-electric/plastic-lighting-fixtures/glop/mini-glop-2-95018-2.jpg"
   }
 ]

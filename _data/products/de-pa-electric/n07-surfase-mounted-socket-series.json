@@ -1,0 +1,65 @@
+[
+    {
+        "Code": "70001 white",
+        "Name": "Розетка круглая накладная без заземлен.",
+        "Cost": 1.73,
+        "OnBox": 200,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/70001.png"
+    },
+    {
+        "Code": "70001 black",
+        "Name": "Розетка круглая накладная без заземлен. (Черная)",
+        "Cost": 1.73,
+        "OnBox": 200,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/70001.png"
+    },
+    {
+        "Code": "70101 white",
+        "Name": "Розетка круглая накладная с заземлен.",
+        "Cost": 1.94,
+        "OnBox": 150,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/70101.png"
+    },
+    {
+        "Code": "70101 black",
+        "Name": "Розетка круглая накладная с заземлен. (Черная)",
+        "Cost": 1.94,
+        "OnBox": 150,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/70101.png"
+    },
+    {
+        "Code": 70102,
+        "Name": "Розетка накладная с заземлен.",
+        "Cost": 3.11,
+        "OnBox": 120,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/70102.png"
+    },
+    {
+        "Code": 80000,
+        "Name": "Влагозащищенная розетка накладная без заземлен.",
+        "Cost": 3.17,
+        "OnBox": 120,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/80000.png"
+    },
+    {
+        "Code": 80002,
+        "Name": "Влагозащищенная розетка накладная без заземлен. c защитой для детей",
+        "Cost": 3.41,
+        "OnBox": 120,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/80000.png"
+    },
+    {
+        "Code": 81301,
+        "Name": "Розетка мебельная сзаземлен.",
+        "Cost": 4.43,
+        "OnBox": 150,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/81301.png"
+    },
+    {
+        "Code": 81302,
+        "Name": "Розетка встраевая с выкл. с заземлен.",
+        "Cost": 4.43,
+        "OnBox": 150,
+        "Img": "/dist/images/de-pa-electric/surfase-mounted-socket-series/81301.png"
+    }
+]

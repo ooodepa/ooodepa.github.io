@@ -1,13 +1,19 @@
 ---
 layout: page
-title: Серия Жемчужина DE-PA Electric
-description: Серия Жемчужина DE-PA Electric
-permalink: products/de-pa-electric/pearl-series/
-category: price-de-pa
+title: Потолочные светильники DE-PA Electric
+description: Потолочные светильники DE-PA Electric
+permalink: products/de-pa-electric/plastic-lighting-fixtures/
+category: products-de-pa
 ---
 
+<ul>
+    {% for i in site.categories.products-de-pa-electric-n09-plastic-lighting-fixtures reversed %}
+    <li><a href="{{ i.url }}">{{ i.title }}</a></li>
+    {% endfor %}
+</ul>
+
 <div class="page__posts">
-    {% for i in site.data.prices.de-pa-electric.pearl-series %}
+    {% for i in site.data.products.de-pa-electric.n09-0-plastic-lighting-fixtures %}
     <div class="posts__post">
         <div class="posts__img">
             <img src="{{ i.Img }}" alt="">
