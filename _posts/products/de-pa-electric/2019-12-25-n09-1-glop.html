@@ -1,0 +1,25 @@
+---
+layout: page
+title: Glop
+description: Glop | Потолочные светильники DE-PA Electric
+permalink: products/de-pa-electric/plastic-lighting-fixtures/glop/
+category: products-de-pa-electric-n09-plastic-lighting-fixtures
+---
+
+<div class="page__posts">
+    {% for i in site.data.products.de-pa-electric.n09-1-plastic-lighting-fixtures-glop %}
+    <div class="posts__post">
+        <div class="posts__img">
+            <img src="{{ i.Img }}" alt="">
+        </div>
+        <div class="posts__name">
+            {{ i.Name }}
+        </div>
+        <ul class="posts__list">
+            <li>Модель: <b>{{ i.Code }}</b></li>
+            <li>Цена за 1 ед. c НДС: <b>{{ i.Cost }} BYN</b></li>
+            <li>В коробке, шт.: <b>{{ i.OnBox }}</b></li>
+        </ul>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,12 @@
+---
+layout: page
+title: Продукция DE-PA Electric
+description: DE-PA Electric. Продукция
+permalink: products/de-pa-electric/
+---
+
+<ol>
+    {% for i in site.categories.products-de-pa reversed %}
+    <li><a href="{{ site.baseurl }}/{{ i.permalink }}">{{ i.title }}</a></li>
+    {% endfor %}
+</ol>

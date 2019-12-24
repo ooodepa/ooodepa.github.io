@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "Продукция DE-PA Electric",
+        "ImgSrc": "/dist/images/de-pa-electric/logo.png",
+        "ImgAlt": "Logo DE-PA Electric",
+        "Link": "de-pa-electric/"
+    },
+    {
+        "Name": "Продукция MONO Electric",
+        "ImgSrc": "/dist/images/mono-electric/logo.png",
+        "ImgAlt": "Logo MONO Electric",
+        "Link": "mono-electric/"
+    },
+    {
+        "Name": "Продукция Pronil",
+        "ImgSrc": "/dist/images/pronil/logo.svg",
+        "ImgAlt": "Logo Pronil",
+        "Link": "pronil/"
+    }
+]
