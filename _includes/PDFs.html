@@ -1,16 +1,9 @@
----
-layout: page
-title: Каталоги
-description: Каталоги
-permalink: katalogs/
----
-
 <div class="page__posts">
-    {% for element in site.data.katalogs %}
+    {% for element in page.PDFs %}
     <a href="{{ element.Link }}">
         <div class="posts__post">
             <div class="posts__img">
-                <img src="{{ element.ImgSrc }}" alt="{{ element.ImgAlt }}" />
+                <img src="{{ element.ImgSrc }}/dist/images/icons/pdf.png" alt="" />
             </div>
             <div class="posts__name">
                 {{ element.Name }}
