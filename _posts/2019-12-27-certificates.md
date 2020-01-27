@@ -20,6 +20,9 @@ PDFs:
 
 - Name: ETA izolasyon ve kimya san.tic.ltd.sti.
   Link: http://docs.de-pa.by/certificates/BBA-test-61007interim-rep.pdf
+  
+- Name: Протокол испытание
+  Link: http://docs.de-pa.by/certificates/test-protocol.pdf
 
 ---
 
