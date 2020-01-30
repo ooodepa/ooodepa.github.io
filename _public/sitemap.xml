@@ -19,4 +19,13 @@
 </url>
 {% endfor%}
 
+{% for element in site.pages %}
+<url>
+  <loc>{{ site.site_url }}{{ element.url }}</loc>
+  <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.5</priority>
+</url>
+{% endfor%}
+
 </urlset>

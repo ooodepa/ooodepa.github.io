@@ -1,0 +1,10 @@
+---
+layout: page
+title: Разветлители. Тройники DE-PA Electric
+description: Разветлители. Тройники DE-PA Electric
+category: products-de-pa
+ImgSrc: group-socket-and-plug/10001.png
+---
+
+{% assign products_array = site.data.products.de-pa-electric.group-socket-and-plug %}
+{% include Products_posts.html %}
