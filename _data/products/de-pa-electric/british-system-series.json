@@ -4,97 +4,97 @@
         "Name": "Колодка 4 гнезда английская с заземлен. \"Англ",
         "Cost": 7.21,
         "OnBox": 24,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": 40402,
         "Name": "Удлинитель 4/2м. английский с заземлен. \"Англ",
         "Cost": 13.49,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": "40402-eng",
         "Name": "Удлинитель 4/2м. английский с заземлен.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 17.11,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": 40403,
         "Name": "Удлинитель 4/3м .английский с заземлен. \"Англ",
         "Cost": 15.43,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": "40403-eng",
         "Name": "Удлинитель 4/3м .английский с заземлен.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 19.1,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": 40405,
         "Name": "Удлинитель 4/5м . английский с заземлен. \"Англ",
         "Cost": 19.98,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": "40405-eng",
         "Name": "Удлинитель 4/5м . английский с заземлен.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 24.18,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/40400.png"
+        "Img": "40400.png"
     },
     {
         "Code": 41400,
         "Name": "Колодка 4 гнезда английская с заземлен. с выкл. \"Англ",
         "Cost": 10,
         "OnBox": 24,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     },
     {
         "Code": 41402,
         "Name": "Удлинитель 4/2м. английский с заземлен. с выкл.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 16.27,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     },
     {
         "Code": "41402-eng",
         "Name": "Удлинитель 4/2м. английский с заземлен. с выкл.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 19.91,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     },
     {
         "Code": 41403,
         "Name": "Удлинитель 4/3м .английский с заземлен.с выкл.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 18.13,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     },
     {
         "Code": "41403-eng",
         "Name": "Удлинитель 4/3м .английский с заземлен.с выкл.(C АНГЛ.ВИЛКОЙ)",
         "Cost": 22.25,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     },
     {
         "Code": 41405,
         "Name": "Удлинитель 4/5м . английский с заземлен. (C АНГЛ.ВИЛКОЙ)",
         "Cost": 22.99,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     },
     {
         "Code": "41405-eng",
         "Name": "Удлинитель 4/5м . английский с заземлен.с выкл. (C АНГЛ.ВИЛКОЙ)",
         "Cost": 27.19,
         "OnBox": 12,
-        "Img": "/dist/images/de-pa-electric/british-system-series/41400.png"
+        "Img": "41400.png"
     }
 ]
