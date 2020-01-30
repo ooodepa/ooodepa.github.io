@@ -7,10 +7,5 @@ ImgSrc: de-pa-electric-logo.png
 ImgAlt: Logo DE-PA Electric
 ---
 
-<ul>
-    {% for element in site.pages %}
-        {% if element.category == "products-de-pa" %}
-            <li><a href="{{ site.baseurl }}{{ element.url }}">{{ element.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-</ul>
+{% assign category = "products-de-pa" %}
+{% include Posts.html %}
