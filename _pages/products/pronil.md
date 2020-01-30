@@ -2,22 +2,30 @@
 layout: page
 title: Продукция Pronill
 description: Pronill. Продукция
+
+PDFs:
+
+- Name: "Описание PRONIL ACR"
+  Link: "http://docs.de-pa.by/products/Описание-PRONIL-ACR-ДЕ-ПА.pdf"
+  ImgSrc: "/dist/images/icons/pdf.png"
+  ImgAlt: null
+
+- Name: КП Профиль бентонитовый"
+  Link: "http://docs.de-pa.by/products/КП-Профиль-бентонитовый-ДЕ-ПА.pdf"
+  ImgSrc: "/dist/images/icons/pdf.png"
+  ImgAlt: null
+
+- Name: "Пробка РRONILLOCK из гидрофильной резины"
+  Link: "http://docs.de-pa.by/products/Пробка-РRONILLOCK-из-гидрофильной-резины-ДЕ-ПА.pdf"
+  ImgSrc: "/dist/images/icons/pdf.png"
+  ImgAlt: null
+
 ---
 
-<div class="page__posts">
-{% for element in site.data.products.pronil.pronil %}
-    <a href="{{ element.Link }}">
-        <div class="posts__post">
-            <div class="posts__img">
-                <img src="{{ element.ImgSrc }}" alt="{{ element.ImgAlt }}" />
-            </div>
-            <div class="posts__name">
-                {{ element.Name }}
-            </div>
-        </div>
-    </a>
-{% endfor %}
-</div>
+{% assign category = "pronil" %}
+{% include Posts.html %}
+
+{% include PDFs.html %}
 
 ---
 

@@ -2,6 +2,9 @@
 layout: page
 title: BENTONITE Hydrophilic Waterstop
 description: Bentonite and butyl rubber based product for the effective sealing of concrete construction joints.
+category: pronil
+ImgSrc: pronil-bentonite-hydrophilic-waterstop-1.jpg
+ImgAlt: 
 ---
 
 <p style="text-align: center;">Bentonite and butyl rubber based product for the effective sealing of concrete construction joints.</p>

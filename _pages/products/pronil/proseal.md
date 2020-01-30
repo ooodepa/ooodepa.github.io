@@ -2,6 +2,9 @@
 layout: page
 title: Proseal Joint Sealing System
 description: High performance sealing system for expansion (movement) and connection joints or cracks.
+category: pronil
+ImgSrc: pronil-proseal-joint-sealing-system.jpg
+ImgAlt: 
 ---
 
 High performance sealing system for expansion (movement) and connection joints or cracks.

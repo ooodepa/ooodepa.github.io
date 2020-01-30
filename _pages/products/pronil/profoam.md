@@ -2,6 +2,9 @@
 layout: page
 title: PROFOAM Fire Retardant Acoustic Foams
 description: Open-cell, impregnated polyurethane foam for acoustical and thermal insulation.
+category: pronil
+ImgSrc: pronil-profoam-fire-retardant-acoustic-foams.jpg
+ImgAlt:
 ---
 
 Open-cell, impregnated polyurethane foam for acoustical and thermal insulation.
