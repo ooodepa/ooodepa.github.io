@@ -7,5 +7,4 @@ ImgSrc: accessories/10012-1.png
 ---
 
 {% assign products_array = site.data.products.de-pa-electric.accessories %}
-
 {% include Products_posts.html %}
