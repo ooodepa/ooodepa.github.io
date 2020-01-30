@@ -2,6 +2,9 @@
 layout: page
 title: Продукция Pronill
 description: Pronill. Продукция
+category: products
+ImgSrc: pronil-logo.svg
+ImgAlt: Logo Pronil
 
 PDFs:
 
