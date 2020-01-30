@@ -4,419 +4,419 @@
         "Name": "Коробка под 1-2 автомата с местом под пломбу Наружная",
         "Cost": 1.15,
         "OnBox": 240,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91101.png"
+        "Img": "91101.png"
     },
     {
         "Code": "91101-1",
         "Name": "Коробка под 1-2 автомата -Бук",
         "Cost": 2.48,
         "OnBox": 240,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91101-1.png"
+        "Img": "91101-1.png"
     },
     {
         "Code": "91101-2",
         "Name": "Коробка под 1-2 автомата- Орех",
         "Cost": 2.48,
         "OnBox": 240,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91101-2.png"
+        "Img": "91101-2.png"
     },
     {
         "Code": 91002,
         "Name": "Коробка под 2 автомата Наружная",
         "Cost": 4.43,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002.png"
+        "Img": "91002.png"
     },
     {
         "Code": "91002-1",
         "Name": "Коробка под 2 автомата- Бук",
         "Cost": "07.08",
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-1.png"
+        "Img": "91002-1.png"
     },
     {
         "Code": "91002-2",
         "Name": "Коробка под 2 автомата- Орех",
         "Cost": "07.08",
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-2.png"
+        "Img": "91002-2.png"
     },
     {
         "Code": 91102,
         "Name": "Коробка под 2 автомата внутренная",
         "Cost": 4.43,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91102.png"
+        "Img": "91102.png"
     },
     {
         "Code": "91102-1",
         "Name": "Коробка под 2 автомата- Бук",
         "Cost": 5.62,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-1.png"
+        "Img": "91002-1.png"
     },
     {
         "Code": "91102-2",
         "Name": "Коробка под 2 автомата- Орех",
         "Cost": 5.62,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-2.png"
+        "Img": "91002-2.png"
     },
     {
         "Code": 91103,
         "Name": "Коробка под 3-4 автомата с местом под пломбу Наружная",
         "Cost": 1.6,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91103.png"
+        "Img": "91103.png"
     },
     {
         "Code": "91103-1",
         "Name": "Коробка под 3-4 автомата- Бук",
         "Cost": 3.24,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91103-1.png"
+        "Img": "91103-1.png"
     },
     {
         "Code": "91103-2",
         "Name": "Коробка под 3-4 автомата- Орех",
         "Cost": 3.24,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91103-2.png"
+        "Img": "91103-2.png"
     },
     {
         "Code": 91004,
         "Name": "Коробка под 4 автомата Наружная",
         "Cost": 7.43,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002.png"
+        "Img": "91002.png"
     },
     {
         "Code": "91004-1",
         "Name": "Коробка под 4 автомата- Бук",
         "Cost": 10.39,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-1.png"
+        "Img": "91002-1.png"
     },
     {
         "Code": "91004-2",
         "Name": "Коробка под 4 автомата-Орех",
         "Cost": 10.39,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-2.png"
+        "Img": "91002-2.png"
     },
     {
         "Code": 91104,
         "Name": "Коробка под 4 автомата",
         "Cost": 7.43,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91102.png"
+        "Img": "91102.png"
     },
     {
         "Code": "91104-1",
         "Name": "Коробка под 4 автомата-Бук",
         "Cost": 8.75,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-1.png"
+        "Img": "91002-1.png"
     },
     {
         "Code": "91104-2",
         "Name": "Коробка под 4 автомата -Орех",
         "Cost": 8.75,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91002-2.png"
+        "Img": "91002-2.png"
     },
     {
         "Code": 91006,
         "Name": "Коробка под 6 автоматов Наружная",
         "Cost": 8.41,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006.png"
+        "Img": "91006.png"
     },
     {
         "Code": "91006-1",
         "Name": "Коробка под 6 автоматов- Бук",
         "Cost": 11.36,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91006-2",
         "Name": "Коробка под 6 автоматов- Орех",
         "Cost": 11.36,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91106,
         "Name": "Коробка под 6 автоматов внутреная",
         "Cost": 8.41,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91106.png"
+        "Img": "91106.png"
     },
     {
         "Code": "91106-1",
         "Name": "Коробка под 6 автоматов -Бук",
         "Cost": 9.86,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91106-2",
         "Name": "Коробка под 6 автоматов - Орех",
         "Cost": 9.86,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91009,
         "Name": "Коробка под 9 автоматов Наружная",
         "Cost": 9.73,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006.png"
+        "Img": "91006.png"
     },
     {
         "Code": "91009-1",
         "Name": "Коробка под 9 автоматов- Бук",
         "Cost": 13.85,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91009-2",
         "Name": "Коробка под 9 автоматов- Орех",
         "Cost": 13.85,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91109,
         "Name": "Коробка под 9 автоматов внутренняя",
         "Cost": 9.73,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91106.png"
+        "Img": "91106.png"
     },
     {
         "Code": "91109-1",
         "Name": "Коробка под 9 автоматов- Бук",
         "Cost": 11.63,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91109-2",
         "Name": "Коробка под 9 автоматов- Орех",
         "Cost": 11.63,
         "OnBox": 30,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91012,
         "Name": "Коробка под 12 автоматов Наружная",
         "Cost": 12.38,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006.png"
+        "Img": "91006.png"
     },
     {
         "Code": "91012-1",
         "Name": "Коробка под 12 автоматов- Бук",
         "Cost": 17.39,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91012-2",
         "Name": "Коробка под 12 автоматов- Орех",
         "Cost": 17.39,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91112,
         "Name": "Коробка под 12 автоматов внутреняя",
         "Cost": 12.38,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91106.png"
+        "Img": "91106.png"
     },
     {
         "Code": "91112-1",
         "Name": "Коробка под 12 автоматов- Бук",
         "Cost": 14.74,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91112-2",
         "Name": "Коробка под 12 автоматов- Орех",
         "Cost": 14.74,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91016,
         "Name": "Коробка под 16 автоматом Наружная",
         "Cost": 17.03,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016.png"
+        "Img": "91016.png"
     },
     {
         "Code": "91016-1",
         "Name": "Коробка под 16 автоматом- Бук",
         "Cost": 22.2,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-1.png"
+        "Img": "91016-1.png"
     },
     {
         "Code": "91016-2",
         "Name": "Коробка под 16 автоматом- Орех",
         "Cost": 22.2,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-2.png"
+        "Img": "91016-2.png"
     },
     {
         "Code": 91116,
         "Name": "Коробка под 16 автоматом внутреняя",
         "Cost": 17.03,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91116.png"
+        "Img": "91116.png"
     },
     {
         "Code": "91116-1",
         "Name": "Коробка под 16 автоматом- Бук",
         "Cost": 19.55,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-1.png"
+        "Img": "91016-1.png"
     },
     {
         "Code": "91116-2",
         "Name": "Коробка под 16 автоматом-Орех",
         "Cost": 19.55,
         "OnBox": 20,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-2.png"
+        "Img": "91016-2.png"
     },
     {
         "Code": 91018,
         "Name": "Коробка под 18 автоматом Наружная",
         "Cost": 22.99,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006.png"
+        "Img": "91006.png"
     },
     {
         "Code": "91018-1",
         "Name": "Коробка под 18 автоматом- Бук",
         "Cost": 32.29,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91018-2",
         "Name": "Коробка под 18 автоматом- Орех",
         "Cost": 32.29,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91118,
         "Name": "Коробка под 18 автоматом внутреняя",
         "Cost": 22.99,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91106.png"
+        "Img": "91106.png"
     },
     {
         "Code": "91118-1",
         "Name": "Коробка под 18 автоматом- Бук",
         "Cost": 27.64,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-1.png"
+        "Img": "91006-1.png"
     },
     {
         "Code": "91118-2",
         "Name": "Коробка под 18 автомат- Орех",
         "Cost": 27.64,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91006-2.png"
+        "Img": "91006-2.png"
     },
     {
         "Code": 91024,
         "Name": "Коробка под 24 автоматом Наружная",
         "Cost": 25.3,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016.png"
+        "Img": "91016.png"
     },
     {
         "Code": "91024-1",
         "Name": "Коробка под 24 автоматом- Бук",
         "Cost": 31.49,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-1.png"
+        "Img": "91016-1.png"
     },
     {
         "Code": "91024-2",
         "Name": "Коробка под 24 автоматом- Орех",
         "Cost": 31.49,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-2.png"
+        "Img": "91016-2.png"
     },
     {
         "Code": 91124,
         "Name": "Коробка под 24 автоматом внутреняя",
         "Cost": 25.3,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91116.png"
+        "Img": "91116.png"
     },
     {
         "Code": "91124-1",
         "Name": "Коробка под 24 автоматом- Бук",
         "Cost": 28.26,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-1.png"
+        "Img": "91016-1.png"
     },
     {
         "Code": "91124-2",
         "Name": "Коробка под 24 автоматом- Орех",
         "Cost": 28.26,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91016-2.png"
+        "Img": "91016-2.png"
     },
     {
         "Code": 91036,
         "Name": "Коробка под 36 автоматом Наружная",
         "Cost": 30.96,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91136.png"
+        "Img": "91136.png"
     },
     {
         "Code": "91036-1",
         "Name": "Коробка под 36 автоматом- Бук",
         "Cost": 38.92,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91036-1.png"
+        "Img": "91036-1.png"
     },
     {
         "Code": "91036-2",
         "Name": "Коробка под 36 автоматом - Орех",
         "Cost": "38,92",
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91036-2.png"
+        "Img": "91036-2.png"
     },
     {
         "Code": 91136,
         "Name": "Коробка под 36 автоматом внутреняя",
         "Cost": 30.96,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91136.png"
+        "Img": "91136.png"
     },
     {
         "Code": "91136-1",
         "Name": "Коробка под 36 автоматом- Бук",
         "Cost": 34.8,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91036-1.png"
+        "Img": "91036-1.png"
     },
     {
         "Code": "91036-2",
         "Name": "Коробка под 36 автоматом- Орех",
         "Cost": 38.92,
         "OnBox": 10,
-        "Img": "/dist/images/de-pa-electric/fuse-boxes/91036-2.png"
+        "Img": "91036-2.png"
     }
 ]
