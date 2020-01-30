@@ -70,4 +70,42 @@ data:
 
 <hr />
 
-{% include contacts.html %}
+{% for i in page.data %}
+<div>
+
+    <h2>{{ i.Title_icon }} {{ i.Title }}</h2>
+
+    <p style="text-align: center;">{{ i.Text }}</p>
+
+    <div class="page__flex">
+        {% if i.Phone_1 != "" %}
+        <a class="page__button" href="tel: {{ i.Phone_1 }}">{{ i.Phone_1_title }}</a>
+        {% endif %}
+
+        {% if i.Phone_2 != "" %}
+        <a class="page__button" href="tel: {{ i.Phone_2 }}">{{ i.Phone_2_title }}</a>
+        {% endif %}
+
+        {% if i.Email != "" %}
+        <a class="page__button" href="mailto: {{ i.Email }}">{{ i.Email }}</a>
+        {% endif %}
+    </div>
+
+    <div class="page__flex">
+        {% if i.Viber != "" %}
+        <a class="page__button--viber fab fa-viber" href="viber://add?number={{ i.Viber }}"></a>
+        {% endif %}
+
+        {% if i.WhatsApp != "" %}
+        <a class="page__button--whats-app fab fa-whatsapp" href="https://api.whatsapp.com/send?phone={{ i.WhatsApp }}"></a>
+        {% endif %}
+
+        {% if i.Skype != "" %}
+        <a class="page__button--skype fab fa-skype" href="skype:{{ i.Skype }}?call"></a>
+        {% endif %}
+    </div>
+</div>
+
+<hr />
+
+{% endfor %}
