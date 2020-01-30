@@ -3,8 +3,9 @@ layout: page
 title: Аксессуары DE-PA Electric
 description: Аксессуары DE-PA Electric
 category: products-de-pa
+ImgSrc: accessories/10012-1.png
 ---
 
-{% assign products_array = site.data.products.de-pa-electric.n04-accessories %}
+{% assign products_array = site.data.products.de-pa-electric.accessories %}
 
 {% include Products_posts.html %}
