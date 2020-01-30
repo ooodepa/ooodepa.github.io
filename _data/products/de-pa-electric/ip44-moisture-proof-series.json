@@ -4,55 +4,55 @@
         "Name": "Розетка влагозащищенная накладная с заземлен.",
         "Cost": 3.65,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/80101.png"
+        "Img": "80101.png"
     },
     {
         "Code": 80102,
         "Name": "розетка накладная с заземлен. с защитой для детей",
         "Cost": 3.9,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/80101.png"
+        "Img": "80101.png"
     },
     {
         "Code": 81101,
         "Name": "Влагозащищенная розетка накладная с заземлен. с крышкой",
         "Cost": 4.27,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/81101.png"
+        "Img": "81101.png"
     },
     {
         "Code": 81102,
         "Name": "Влагозащищенная розетка накладная с заземлен.с крышкой с защитой для детей",
         "Cost": 4.38,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/81101.png"
+        "Img": "81101.png"
     },
     {
         "Code": 82000,
         "Name": "Влагозащищенная кнопка для звонка",
         "Cost": 3.65,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/82000.png"
+        "Img": "82000.png"
     },
     {
         "Code": 82001,
         "Name": "Влагозащитный выключатель",
         "Cost": 3.65,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/82001.png"
+        "Img": "82001.png"
     },
     {
         "Code": 82002,
         "Name": "Влагозащитныв выключатель двойной",
         "Cost": 3.79,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/82002.png"
+        "Img": "82002.png"
     },
     {
         "Code": 82003,
         "Name": "Влагозащитный Проходной выключатель Вавиен",
         "Cost": 5,
         "OnBox": 120,
-        "Img": "/dist/images/de-pa-electric/ip44-moisture-proof-series/82003.png"
+        "Img": "82003.png"
     }
 ]
