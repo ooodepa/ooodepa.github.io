@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IP44 вагозащищенных накладных изделий DE-PA Electric
+title: IP44 вагозащищенных накладных изделий
 description: IP44 вагозащищенных накладных изделий DE-PA Electric
 category: products-de-pa
 ImgSrc: ip44-moisture-proof-series/80101.png

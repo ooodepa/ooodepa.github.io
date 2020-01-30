@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Серия розеток накладных с заземлением DE-PA Electric
+title: Серия розеток накладных с заземлением
 description: Серия розеток накладных с заземлением DE-PA Electric
 category: products-de-pa
 ImgSrc: surfase-mounted-socket-series/70001.png

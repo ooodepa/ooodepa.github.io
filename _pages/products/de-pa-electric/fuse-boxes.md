@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Коробки под автомать DE-PA Electric
+title: Коробки под автомать
 description: Коробки под автомать DE-PA Electric
 category: products-de-pa
 ImgSrc: fuse-boxes/91101.png

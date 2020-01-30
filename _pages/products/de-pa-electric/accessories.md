@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Аксессуары DE-PA Electric
+title: Аксессуары
 description: Аксессуары DE-PA Electric
 category: products-de-pa
 ImgSrc: accessories/10012-1.png
