@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Кабельные каналы
-description: Кабельные каналы DE-PA Electric
+description: Кабельные каналы / Cable channels / Kablo kanalları
 category: products-de-pa
 ImgSrc: cable-trunking/01201210.png
 ---
