@@ -1,7 +1,7 @@
 <nav class="page__menu">
     <ul>
-        {% for element in site.data.database.main-menu %}
-        <li><a href="{{ element.url }}">{{ element.title }}</a></li>
+        {% for element in site.data.menu %}
+        <li><a href="{{ element.href }}">{{ element.name }}</a></li>
         {% endfor %}
     </ul>
 </nav>

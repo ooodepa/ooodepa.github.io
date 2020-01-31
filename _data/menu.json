@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Главная",
+        "href": "/"
+    },
+    {
+        "name": "О нас",
+        "href": "/about-us"
+    },
+    {
+        "name": "Каталоги",
+        "href": "/katalogs"
+    },
+    {
+        "name": "Продукция",
+        "href": "/products"
+    },
+    {
+        "name": "Сертификаты",
+        "href": "/certificates"
+    },
+    {
+        "name": "Прайсы",
+        "href": "/prices"
+    },
+    {
+        "name": "Контакты",
+        "href": "/contacts"
+    }
+]
