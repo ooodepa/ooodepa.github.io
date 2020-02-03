@@ -1,7 +1,11 @@
 <footer class="footer">
     <div class="container">
         <div class="page__flex">
-            <a class="page__button--linked-in fab fa-linkedin-in" href="https://www.linkedin.com/in/эльдар-ганбаров-86a14439/" title="Linked in"></a>
+            {% for element in site.data.footer-rights %}
+            <a class="page__button--linked-in {{ element.class }}"
+            href="{{ element.href }}"
+            title="{{ element.title }}"></a>
+            {% endfor %}
         </div>
         {% include Footer/Rights/Rights.html %}
         {% include Yandex/Yandex.html %}

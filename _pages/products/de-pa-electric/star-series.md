@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Серия Звезда DE-PA Electric
+title: Серия Звезда
 description: Серия Звезда DE-PA Electric
 category: products-de-pa
 ImgSrc: star-series/920100.png

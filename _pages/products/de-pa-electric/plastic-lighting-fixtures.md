@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Потолочные светильники DE-PA Electric
+title: Потолочные светильники
 description: Потолочные светильники DE-PA Electric
 category: products-de-pa
 ImgSrc: plastic-lighting-fixtures/95001.png

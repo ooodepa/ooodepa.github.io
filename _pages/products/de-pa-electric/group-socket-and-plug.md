@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Разветлители. Тройники DE-PA Electric
-description: Разветлители. Тройники DE-PA Electric
+title: Разветлители. Тройники
+description: Разветлители. Тройники DE-PA Electric / Group socket & plug
 category: products-de-pa
 ImgSrc: group-socket-and-plug/10001.png
 ---

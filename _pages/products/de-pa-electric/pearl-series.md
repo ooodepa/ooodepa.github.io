@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Серия Жемчужина DE-PA Electric
+title: Серия Жемчужина
 description: Серия Жемчужина DE-PA Electric
 category: products-de-pa
 ImgSrc: pearl-series/10000.png
