@@ -1,0 +1,16 @@
+<div class="page__posts">
+    {% for element in site.pages %}
+    {% if element.category == category %}
+    <a href="{{ site.baseurl }}{{ element.url }}">
+        <div class="posts__post">
+            <div class="posts__img">
+                <img src="{{ element.ImgSrc }}" alt="{{ element.ImgAlt }}" />
+            </div>
+            <div class="posts__name">
+                {{ element.title }}
+            </div>
+        </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+</div>

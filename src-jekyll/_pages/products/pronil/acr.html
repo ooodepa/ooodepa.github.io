@@ -1,0 +1,74 @@
+---
+layout: page
+title: ACR Hydrophilic Waterstop Tape, Plugs and Rings
+description: New generation high performance waterstops which expanding up to 900% when in contact with water.
+category: pronil
+ImgSrc: pronil-acr-hydrophilic-waterstop-tapes-2.jpg
+ImgAlt: 
+
+arr:
+
+- Name: ACR-300 Hydrophilic Waterstop Tape
+  ImgSrc: pronil-acr-300.jpg
+  ImgAlt:
+  Description:
+  - "Tap water, wet/dry difference <b>≥ 300%</b>"
+  - "Concrete water (14 days) <b>≥ 200%</b>"
+  - "3% salt water (14 days) <b>≥ 100%</b>"
+  - "Цвет: <b>красный</b>"
+
+- Name: ACR-600 Hydrophilic Waterstop Tape
+  ImgSrc: pronil-acr-600.jpg
+  ImgAlt:
+  Description:
+  - "Tap water, wet/dry difference <b>≥ 600%</b>"
+  - "Concrete water (14 days) <b>≥ 400%</b>"
+  - "3% salt water (14 days) <b>≥ 200%</b>"
+  - "Цвет: <b>жёлтый</b>"
+
+- Name: ACR-900 Hydrophilic Waterstop Tape
+  ImgSrc: pronil-acr-900.jpg
+  ImgAlt:
+  Description:
+  - "Tap water, wet/dry difference <b>≥ 1300%</b>"
+  - "Rain water (14 days) <b>≥ 900%</b>"
+  - "Concrete water (14 days) <b>≥ 600%</b>"
+  - "3% salt water (14 days) <b>≥ 200%</b>"
+  - "5% salt water (14 days) <b>≥ 260%</b>"
+  - "10% salt water (14 days) <b>≥ 240%</b>"
+  - "Water pressure resistance (14 days): <b>7 bar</b>"
+  - "Цвет: <b>синий</b>"
+
+- Name: PLUGS & RINGS
+  ImgSrc: pronil-acr-hydrophilic-waterstop-plugs-rings.jpg
+  ImgAlt:
+  Description:
+  - "Day 7 <b>≥ 300%</b>"
+  - "Wet/dry difference <b>≥ 300%</b>"
+  - "Water pressure resistance (14 days): <b>7 bar</b>"
+  - "Цвет: <b>красный, синий</b>"
+
+---
+
+<p style="text-align: center;">New generation high performance waterstops which expanding up to 900% when in contact
+    with water.</p>
+
+<div class="page__posts">
+    {% for element in page.arr %}
+    <div class="posts__post" style="width: 320px;">
+        <div class="posts__img info-posts__img">
+            <img src="{{ element.ImgSrc }}" alt="{{ element.ImgAlt }}" />
+        </div>
+        <div class="posts__name">
+            {{ element.Name }}
+        </div>
+        <ul class="posts__list">
+            {% for li in element.Description %}
+            <li>
+                {{ li }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>

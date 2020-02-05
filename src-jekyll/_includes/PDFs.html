@@ -1,0 +1,14 @@
+<div class="page__posts">
+    {% for element in page.PDFs %}
+    <a href="{{ element.Link }}">
+        <div class="posts__post">
+            <div class="posts__img">
+                <img src="{{ site.baseurl }}/imgs/pdf.png" />
+            </div>
+            <div class="posts__name">
+                {{ element.Name }}
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>

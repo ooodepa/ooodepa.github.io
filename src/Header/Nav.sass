@@ -1,0 +1,48 @@
+@media(min-width: 1025px)
+    .page__menu
+        float: left
+        width: calc(100% - #{$logoWidth})
+        height: 60px
+        ul
+            width: 100%
+            height: 100%
+            margin: 0
+            padding: 0
+        ul > li
+            display: inline-block
+            height: 100%
+        a
+            display: flex
+            height: 100%
+            justify-content: center
+            align-items: center
+            padding: 0 12px
+            background-color: white
+            color: $siteColor
+        a:hover
+            text-decoration: none
+            background-color: $siteColor
+            color: white
+
+@media(max-width: 1024px)
+    .page__menu
+        display: none
+        width: 100%
+        float: left
+        ul
+            width: 100%
+            margin: 0
+            padding: 0
+        li
+            display: block
+            width: 100%
+            text-align: center
+        a
+            display: block
+            padding: 16px
+        a:hover
+            text-decoration: none
+            color: white
+            background-color: $siteColor
+    .page__menu--open
+        display: block

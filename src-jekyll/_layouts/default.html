@@ -1,0 +1,60 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="{{ page.description }}{{ site.data.vars.description }}" />
+    <meta name="author" content="{{ site.data.vars.author }}" />
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+
+
+    <title>{{ page.title }} | {{ site.data.vars.title }}</title>
+
+
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png" type="image/png" />
+    <meta name="theme-color" content="#06c" />
+
+
+    {% if jekyll.environment == "production" %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/dist/styles.css?ver={{ site.time | date: '%Y-%m-%d_%H-%M' }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/dist/styles.css">
+    {% endif %}
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            {% include Header/Header.html %}
+            <noscript>Не включен Java Script. Некоторая информация может быть не отображена на странице.</noscript>
+            {{ content }}
+            <div id="vue-app"></div>
+        </div>
+        {% include Footer/Footer.html %}
+    </div>
+
+
+    {% if jekyll.environment == "production" %}
+    <script src="{{ site.baseurl }}/dist/scripts.js?ver={{ site.time | date: '%Y-%m-%d_%H-%M' }}"></script>
+    {% else %}
+    <script src="{{ site.baseurl }}/dist/scripts.js"></script>
+    {% endif %}
+
+
+    {% include Yandex.html %}
+
+
+</body>
+
+</html>

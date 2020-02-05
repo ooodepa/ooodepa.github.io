@@ -1,13 +1,5 @@
-# Jekyll 
 baseurl: ''
-exclude:
-  - node_modules
-  - src
-  - package-lock.json
-  - package.json
-  - README.md
-  - webpack.dev.js
-  - webpack.prod.js
+source: ./src-jekyll
 collections:
   public:
     output: true
@@ -15,11 +7,3 @@ collections:
   pages:
     output: true
     permalink: /:path/
-
-# vars
-title: ООО "ДЕ-ПА" электроустановочные изделия, светильники, розетки, гидроизоляция
-description: ...
-author: PavelGalanin2001
-site-author: ООО "ДЕ-ПА"
-# site_url: https://de-pa.by
-site_url: https://ooodepa.github.io
