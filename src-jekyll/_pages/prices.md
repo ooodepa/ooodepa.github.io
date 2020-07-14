@@ -25,6 +25,11 @@ PDFs:
   ImgAlt: ''
   Link: http://docs.de-pa.by/prices/price-tips.pdf
 
+- Name: Прайс Pronil
+  ImgSrc: "/dist/images/icons/pdf.png"
+  ImgAlt: ''
+  Link: http://docs.de-pa.by/prices/price-pronil.pdf
+
 ---
 
 {% include PDFs.html %}
