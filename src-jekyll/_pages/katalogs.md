@@ -35,10 +35,10 @@ PDFs:
   ImgAlt: ''
   Link: http://docs.de-pa.by/katalogs/katalog-recber-kablo.pdf
 
-- Name: HISAR ELEKTRIK
-  ImgSrc: "/dist/images/icons/pdf.png"
-  ImgAlt: ''
-  Link: http://docs.de-pa.by/katalogs/katalog-hisar-elektrik.pdf
+# - Name: HISAR ELEKTRIK
+#   ImgSrc: "/dist/images/icons/pdf.png"
+#   ImgAlt: ''
+#   Link: http://docs.de-pa.by/katalogs/katalog-hisar-elektrik.pdf
 
 - Name: MEDIVA
   ImgSrc: "/dist/images/icons/pdf.png"
