@@ -8,5 +8,3 @@ import './Rights'
 import './Button'
 
 import './main.sass'
-
-//import '@/main'
