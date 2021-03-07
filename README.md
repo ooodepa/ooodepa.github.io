@@ -6,10 +6,10 @@
 ## Starting the Jekyll server (Terminal 1)
 
 ```bash
-sudo docker-compose up
+sudo docker-compose -f docker-compose-jekyll-serve.yml up
 ```
 
-## Start Node for JS compilation (Terminal 2)
+## Start Node to compile JS (Terminal 2)
 
 Creating a Docker container (once).
 
@@ -37,3 +37,26 @@ npm i
     ```bash
     npm run prod
     ```
+
+## Send to production
+
+Using webpack
+- creating CSS files
+- creating JS files
+- loading fonts
+
+```bash
+sudo docker build . -t my_node_container
+sudo docker run -v $(pwd):/content --rm --entrypoint bash -it my_node_container
+cd /content
+npm run prod
+exit
+```
+
+Creating a website using the Jekyll website generator.
+
+```bash
+sudo docker-compose -f docker-compose-jekyll-build.yml up
+```
+
+The finished site is located in the folder `_site`.
