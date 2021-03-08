@@ -1,6 +1,6 @@
 version: '3'
 services:
-  jekyll-serve:
+  myService:
     image: jekyll/jekyll:4.0
     volumes:
       - ".:/srv/jekyll"
