@@ -3,35 +3,60 @@
 - [English](README.md)
 - [Русский](README-ru.md)
 
-## Launch Jekyll (Terminal 1)
+## Project Tree
 
 ```bash
-sudo docker-compose -f docker-compose-jekyll-serve.yml up
+tree --charset ascii -I "dist|node_modules|src|src-jekyll"
+```
+
+```
+.
+|-- dist                // Ready site
+|-- src                 // Source code
+|-- src-jekyll          // Jekyll source code
+|-- README*. md         // Instructions file
+|-- _config.yml         // Jekyll configuration file
+|-- babel.config.json   // Babel configuration file
+|-- docker-compose. yml // Docker-compose configuration file
+|-- package.json        // Package versions
+|-- postcss.config.js   // Post CSS configuration file
+|-- webpack.config.js   // Webpack configuration file
+|-- webpack.dev.js      // Webpack configuration file for dev mode
+`-- webpack.prod.js     // Webpack configuration file for prod mode
+```
+
+## Install packages (1 time)
+
+```bash
+sudo docker-compose up install
+```
+
+## Starting the Jekyll server (Terminal 1)
+
+```bash
+sudo docker-compose up serve
 ```
 
 ## Launch Webpack (Terminal 2)
 
+~~sudo docker-compose up dev~~
+
 ```bash
-sudo docker-compose -f docker-compose-node.yml run myService /bin/bash
-npm i
 npm run dev
 ```
 
 ## Send to production
 
-Launch Webpack.
-
-```bash
-sudo docker-compose -f docker-compose-node.yml run myService /bin/bash
-cd /content
-npm run prod
-exit
-```
-
 Launch Jekyll.
 
 ```bash
-sudo docker-compose -f docker-compose-jekyll-build.yml up
+sudo docker-compose up build
 ```
 
-The finished site is located in the `_site` folder.
+Launch Webpack.
+
+```bash
+sudo docker-compose up prod
+```
+
+The finished site is located in the `dist` folder.

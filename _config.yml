@@ -1,9 +1,10 @@
 baseurl: ''
 source: ./src-jekyll
+destination: dist
 collections:
-  public:
-    output: true
-    permalink: /:path
-  pages:
-    output: true
-    permalink: /:path/
+    public:
+        output: true
+        permalink: /:path
+    pages:
+        output: true
+        permalink: /:path/

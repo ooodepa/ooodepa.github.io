@@ -1,15 +1,16 @@
 // webpack.config.js
-const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const conf = {
-    optimization: {
-        splitChunks: false
-    },
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'src-jekyll/dist'),
+        path: path.resolve(__dirname, './dist/dist'),
         filename: 'scripts.js',
+        publicPath: '/dist/',
+    },
+    devServer: {
+        contentBase: './dist',
     },
     module: {
         rules: [
@@ -18,20 +19,21 @@ const conf = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: '[name].[ext]'
+                        name: '[name].[ext]',
                     }
                 }]
             },
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                exclude: /node_modules/,
+                loader: 'babel-loader',
             },
             {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'postcss-loader'
+                    'postcss-loader',
                 ]
             },
             {
