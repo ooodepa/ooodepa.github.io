@@ -28,21 +28,22 @@ tree --charset ascii -I "dist|node_modules|src|src-jekyll"
 ## Установка пакетов (1 раз)
 
 ```bash
-sudo docker-compose up install
+sudo docker-compose run node /bin/bash
+cd /content
+npm i
+exit
 ```
 
 ## Запуск Jekyll сервера (Терминал 1)
 
 ```bash
-sudo docker-compose up serve
+sudo docker-compose up jekyll
 ```
 
 ## Запуск Webpack (Терминал 2)
 
-~~sudo docker-compose up dev~~
-
 ```bash
-npm run dev
+sudo docker-compose up node
 ```
 
 ## Отправка на продакшен
@@ -50,13 +51,17 @@ npm run dev
 Запускаем Jekyll.
 
 ```bash
-sudo docker-compose up build
+sudo docker-compose run jekyll /bin/bash
+jekyll build
+exit
 ```
 
 Запускаем Webpack.
 
 ```bash
-sudo docker-compose up prod
+sudo docker-compose run node /bin/bash
+npm run prod
+exit
 ```
 
 Готовый сайт находится в папке `dist`.

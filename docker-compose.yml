@@ -1,31 +1,16 @@
 version: '3'
 services:
-    install:
-        image: node
-        volumes:
-            - '.:/content'
-        command: ['npm', 'i', '--prefix', '/content']
-    dev:
+    node:
         image: node
         volumes:
             - '.:/content'
         ports:
             - 8080:8080
         command: ['npm', 'run', 'dev', '--prefix', '/content']
-    prod:
-        image: node
-        volumes:
-            - '.:/content'
-        command: ['npm', 'run', 'prod', '--prefix', '/content']
-    serve:
+    jekyll:
         image: jekyll/jekyll:4.0
         volumes:
             - '.:/srv/jekyll'
         ports:
             - 4000:4000
         command: ['jekyll', 'serve']
-    build:
-        image: jekyll/jekyll:4.0
-        volumes:
-            - '.:/srv/jekyll'
-        command: ['jekyll', 'build']
