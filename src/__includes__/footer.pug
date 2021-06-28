@@ -1,0 +1,21 @@
+-
+    var social_data = [
+        {
+            "title": "Linked in",
+            "class": "fab fa-linkedin-in",
+            "href": "https://tr.linkedin.com/in/erdal-kanberoglu-0361bb7a"
+        }
+    ]
+
+footer.footer
+    div.container
+        div.page__flex
+            each value in social_data
+                a(
+                    class="page__button--linked-in " + value.class
+                    title=value.title
+                    href=value.href
+                )
+        div.footer-rights
+            span ООО "ДЕ-ПА"
+            div#footer__rights
