@@ -1,0 +1,1 @@
+import './Rights/index.js'
