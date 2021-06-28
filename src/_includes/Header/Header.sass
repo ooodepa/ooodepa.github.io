@@ -1,0 +1,23 @@
+@import './Button/Button.sass'
+@import './Logo/Logo.sass'
+@import './Nav/Nav.sass'
+
+.page__header
+    float: left
+    width: 100%
+    border-bottom: 1px solid grey
+    & > div
+        height: 100%
+    & > div > div
+        float: left
+        height: 60px
+
+@media(max-width: 1024px)
+    .page__header
+        & > div
+            width: 100%
+            max-width: 100%
+            padding: 0
+            margin: 0
+        &> div > div
+            width: 100%

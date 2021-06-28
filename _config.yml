@@ -1,5 +1,5 @@
 baseurl: ''
-source: ./src-jekyll
+source: ./src
 destination: dist
 collections:
     public:
@@ -8,3 +8,6 @@ collections:
     pages:
         output: true
         permalink: /:path/
+exclude:
+    - index.js
+    - index.sass
