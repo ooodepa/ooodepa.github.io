@@ -1,0 +1,14 @@
+:root {
+    --scrollbarBgColor: rgba(0, 102, 204, .4);
+    --scrollbarThumbColor: rgba(0, 102, 204, 1);
+    --scrollbarThumbColorSecond: rgba(70, 102, 204, 1);
+    --scrollbarWidth: 1em;
+    --scrollbarBorder: 0 solid var(--scrollbarBgColor);
+    --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 10);
+}
+
+.scroll {
+    scrollbar-width: var(--scrollbarWidth);
+    scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
+    overflow-y: scroll;
+}
