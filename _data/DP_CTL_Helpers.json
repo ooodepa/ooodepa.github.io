@@ -1,0 +1,44 @@
+[
+    {
+        "dp_id": "6db4d7a2-ef31-4377-86fb-c4c5bbed946e",
+        "dp_sortingIndex": "20",
+        "dp_name": "Директор",
+        "dp_text": "",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "9ca560b8-3ec7-44b8-bcbb-0ed6423b4606",
+        "dp_sortingIndex": "30",
+        "dp_name": "Зам. директора",
+        "dp_text": "",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "cd3ac483-9534-4678-939d-563546e728bd",
+        "dp_sortingIndex": "10",
+        "dp_name": "Центральный офис г. Брест",
+        "dp_text": "ООО \"ДЕ-ПА\", Республика Беларусь, 224701, Брестская область, г. Брест, ул. Лейтенанта Рябцева, д. 108М \n\n УНП 291477952 \n\n р\/с BY18MTBK30120001093300082100 в ЗАО \"МТБанк\", БИК MTBKBY22\n\nАвтобусы (остановка \"Интертранс\"): 21, 21А, 21Б, 23Б, 34, 49\n\nМаршрутки (остановка \"Интертранс\"): 21т",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "dd0e66da-8d76-4bc8-90c0-24b3a9875629",
+        "dp_sortingIndex": "31",
+        "dp_name": "Юрисконсульт",
+        "dp_text": "",
+        "dp_isHidden": "1"
+    },
+    {
+        "dp_id": "e9de5183-e59c-41c8-abf1-d26ada4d55a9",
+        "dp_sortingIndex": "40",
+        "dp_name": "Контактная информация фирмы DE-PA Electric",
+        "dp_text": "İkitelli Org. San. Böl. Metal İş San Sit. 17.Blok No:2-4-6-8 Başakşehir\/İstanbul\/Turkey",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "f2d31940-e967-4a8d-bfec-16cd52ccddd2",
+        "dp_sortingIndex": "32",
+        "dp_name": "Инженер-программист",
+        "dp_text": "",
+        "dp_isHidden": "0"
+    }
+]

@@ -1,0 +1,15 @@
+baseurl: /
+
+collections:
+  public:
+    output: true
+    permalink: /:path
+  pages:
+    output: true
+    permalink: /:path
+
+exclude:
+  - LICENSE
+
+sass:
+  style: compressed

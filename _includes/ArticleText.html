@@ -1,0 +1,19 @@
+{% assign found_page = site.data.DP_DOC_Articles | where: "dp_id", include.page_id | first %}
+
+{% if found_page %}
+    {% if found_page.dp_urlSegment != "index" %}
+        <h1 class="text-primary">{{ found_page.dp_name }}</h1>
+        <p>{{ found_page.dp_text | markdownify  }}</p>
+    {% else %}
+        <div class="home_article">
+            {{ found_page.dp_text | markdownify  }}
+        </div>
+        {% if jekyll.environment == "production" %}
+            <link rel="stylesheet" href="/styles_home_article.css?v={{ site.time | date: '%Y-%m-%d_%H-%M' }}" />
+        {% else %}
+            <link rel="stylesheet" href="/styles_home_article.css" />
+        {% endif %}
+    {% endif %}
+{% else %}
+    {% include Page404.html %}
+{% endif %}

@@ -1,0 +1,32 @@
+<nav class="navbar bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <div style="width: 58px;">
+        </div>
+        <a class="navbar-brand" href="/">
+            <img src="/images/logo.png" width="144.75" height="48" alt="{{site.data.env.title}}" />
+        </a>
+        <div style="width: 58px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">{{site.data.env.title}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    {% for menuElement in site.data.menu %}
+                        {% if menuElement.isHidden == false %}
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ menuElement.href }}">{{ menuElement.name }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

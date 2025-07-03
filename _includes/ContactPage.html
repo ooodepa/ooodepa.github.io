@@ -1,0 +1,45 @@
+<div class="mb-3">
+    {% assign sorted_items = site.data.DP_CTL_Helpers | sort: "dp_sortingIndex" %}
+
+    {% for helper in sorted_items %}
+        {% if helper.dp_isHidden == "0" %}
+            <div class="mt-4 mb-4 pt-4" style="border-top: 1px solid #dbdcdc;">
+                <h2 class="text-primary">{{ helper.dp_name }}</h2>
+                <div class="text-center">{{ helper.dp_text | markdownify }}</div>
+    
+                <div class="text-center">
+                    {% for contactType in site.data.DP_LST_HelperContactTypes %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "1" %}
+                            <a class="btn btn-primary m-2" style="min-width: 200px;" href="tel:{{ contactType.dp_value | replace: '^\d', '' }}">{{ contactType.dp_value }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    {% for contactType in site.data.DP_LST_HelperContactTypes %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "2" %}
+                            <a class="btn btn-primary m-2" style="min-width: 200px;" href="mailto:{{ contactType.dp_value }}">{{ contactType.dp_value }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+                <div class="d-flex justify-content-center flex-wrap">
+                    {% for contactType in site.data.DP_LST_HelperContactTypes %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "3" %}
+                            {% include ContactIcon.html social_icon="viber" value=contactType.dp_value %}
+                        {% endif %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "4" %}
+                            {% include ContactIcon.html social_icon="whatsapp" value=contactType.dp_value %}
+                        {% endif %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "5" %}
+                            {% include ContactIcon.html social_icon="telegram" value=contactType.dp_value %}
+                        {% endif %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "6" %}
+                            {% include ContactIcon.html social_icon="skype" value=contactType.dp_value %}
+                        {% endif %}
+                        {% if contactType.dp_helperId == helper.dp_id and contactType.dp_contactTypeId == "7" %}
+                            {% include ContactIcon.html social_icon="linkedin" value=contactType.dp_value %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

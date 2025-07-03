@@ -1,0 +1,31 @@
+{% assign has_files = false %}
+{% for file in site.data.DP_LST_ArticleAttachedLinks %}
+    {% if file.dp_articleId == include.page_id %}
+        {% assign has_files = true %}
+    {% endif %}
+{% endfor %}
+
+{% if has_files %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">Наименование файла</th>
+                <th class="text-center" width="50">Файл</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for file in site.data.DP_LST_ArticleAttachedLinks %}
+                {% if file.dp_articleId == include.page_id %}
+                    <tr>
+                        <td>{{file.dp_name}}</td>
+                        <td class="text-center">
+                            <a href="{{file.dp_url}}">
+                                {% include Icon.html file=file.dp_url %}
+                            </a>
+                        </td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

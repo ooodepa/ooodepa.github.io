@@ -1,0 +1,49 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- = = = = = = = = -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="{{ page.SEO_DESCRIPTION }}{{ site.data.env.description }}" />
+    <meta name="keywords" content="{{ page.SEO_KEYWORDS }}{{ site.data.env.keywords }}" />
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+    <meta name="theme-color" content="#06c" />
+    <!-- < < < < < < < < favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.data.env.title }}" />
+    <meta name="application-name" content="{{ site.data.env.title }}" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon> > > > > > > > -->
+    <title>{{ page.SEO_TITLE }} | {{ site.data.env.title }}</title>
+    <!-- < < < < < < < < CSS -->
+    <link rel="stylesheet" href="/nodejs/bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="/nodejs/bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/nodejs/bootstrap-icons/node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+   
+    {% if jekyll.environment == "production" %}
+        <link rel="stylesheet" href="/styles.css?v={{ site.time | date: '%Y-%m-%d_%H-%M' }}" />
+    {% else %}
+        <link rel="stylesheet" href="/styles.css" />
+    {% endif %}
+    <!-- CSS > > > > > > > > -->
+</head>
+
+<body>
+    {{ content }}
+</body>
+
+</html>

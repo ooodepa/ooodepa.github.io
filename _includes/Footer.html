@@ -1,0 +1,20 @@
+<div class="pt-4 pb-3" style="background-color: #212529; color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <p>{{ site.data.footer.grp_full_name }}</p>
+                <p>УНП {{ site.data.footer.grp_unp }}</p>
+                <p>{{ site.data.footer.grp_address }}</p>
+                <p>{{ site.data.footer.grp_svidetelstvo }}</p>
+                <p>{{ site.data.footer.belgie }}</p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <p>{{ site.data.footer.rejim_raboti }}</p>
+                {% for button in site.data.footer.buttons %}
+                    <p>{{button}}</p>
+                {% endfor %}
+                <p>{{ site.data.footer.rights }} <span class="text-secondary">({{ site.time | date: '%d.%m.%Y %H:%M' }})</span></p>
+            </div>
+        </div>
+    </div>
+</div>

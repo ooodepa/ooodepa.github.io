@@ -1,0 +1,37 @@
+[
+    {
+        "dp_id": "1",
+        "dp_name": "phone",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "2",
+        "dp_name": "email",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "3",
+        "dp_name": "viber",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "4",
+        "dp_name": "whatsapp",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "5",
+        "dp_name": "telegram",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "6",
+        "dp_name": "skype",
+        "dp_isHidden": "0"
+    },
+    {
+        "dp_id": "7",
+        "dp_name": "linkedin",
+        "dp_isHidden": "0"
+    }
+]

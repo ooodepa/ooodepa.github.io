@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div style="width: 100%; height: 100%; display: flex; flex-direction: column;">
+    <div style="width: 100%; flex: 1 0 auto;">
+        {% include AppMenu.html %}
+        {{ content }}
+    </div>
+    <div style="width: 100%; flex: 0 0 auto;">
+      {% include Footer.html %}
+    </div>
+</div>

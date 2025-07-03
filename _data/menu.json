@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Главная",
+        "href": "/",
+        "isHidden": false
+    },
+    {
+        "name": "О нас",
+        "href": "/about/",
+        "isHidden": false
+    },
+    {
+        "name": "Продукты",
+        "href": "/nomenclature/",
+        "isHidden": true
+    },
+    {
+        "name": "Прайсы",
+        "href": "/prices/",
+        "isHidden": false
+    },
+    {
+        "name": "Каталоги",
+        "href": "/catalogs/",
+        "isHidden": false
+    },
+    {
+        "name": "Сертификаты",
+        "href": "/certificates/",
+        "isHidden": false
+    },
+    {
+        "name": "Услуги",
+        "href": "/consulting/",
+        "isHidden": false
+    },
+    {
+        "name": "Контакты",
+        "href": "/contacts/",
+        "isHidden": false
+    }
+]

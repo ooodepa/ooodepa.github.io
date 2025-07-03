@@ -1,0 +1,14 @@
+{% assign file_ext = include.file | split: "." | last %}
+
+{% case file_ext %}
+    {% when "pdf" %}
+        <i style="font-size: 1.5em; color: red;" class="bi bi-file-earmark-pdf"></i>
+    {% when "doc", "docx" %}
+        <i style="font-size: 1.5em; color: #46a8ee;" class="bi bi-file-earmark-word"></i>
+    {% when "xls", "xlsx" %}
+        <i style="font-size: 1.5em; color: green;" class="bi bi-file-earmark-excel"></i>
+    {% when "jpg", "jpeg", "png", "gif" %}
+        <i style="font-size: 1.5em; color: gray;" class="bi bi-file-earmark-image"></i>
+    {% else %}
+        <i style="font-size: 1.5em; color: gray;" class="bi bi-file-earmark"></i>
+{% endcase %}
