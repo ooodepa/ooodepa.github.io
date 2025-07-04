@@ -7,6 +7,9 @@ collections:
   pages:
     output: true
     permalink: /:path
+  products:
+    output: true
+    permalink: /products/:path
 
 exclude:
   - LICENSE
