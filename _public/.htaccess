@@ -9,4 +9,4 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # Ошибка 404
-ErrorDocument 404 /404/
+ErrorDocument 404 /404.php

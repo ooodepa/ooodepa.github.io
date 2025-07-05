@@ -28,6 +28,14 @@ function renameIndexFiles($dir) {
                     echo "Ошибка при переименовании: $path\n";
                 }
             }
+            elseif ($entry == "404.html") {
+                $newPath = $dir . DIRECTORY_SEPARATOR . "404.php";
+                if (rename($path, $newPath)) {
+                    echo "Переименовано: $path -> $newPath\n";
+                } else {
+                    echo "Ошибка при переименовании: $path\n";
+                }
+            }
         }
         closedir($handle);
     }
