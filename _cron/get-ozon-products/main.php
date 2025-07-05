@@ -96,9 +96,10 @@ function deleteDirectory($dir) {
                 'package_y' => "-",
                 'package_z' => "-",
                 'package_g' => "-",
+                'package_l' => "-",
                 'attributes' => "-",
-                'description_category_id' => '-',
-                'type_id' => '-',
+                'description_category_id' => "-",
+                'type_id' => "-",
             ];
 
             $data['product_id'] = $PRODUCT['product_id'];
@@ -124,6 +125,7 @@ function deleteDirectory($dir) {
                         $PRODUCT_INFO['images'],
                     );
                     $data['color_image'] = $PRODUCT_INFO['color_image'];
+                    $data['package_l'] = $PRODUCT_INFO['volume_weight'];
                     break;
                 }
             }
@@ -211,6 +213,7 @@ ozon_product_package_x: ' . replaceEndLine($OZON_PRODUCT['package_x']) . '
 ozon_product_package_y: ' . replaceEndLine($OZON_PRODUCT['package_y']) . '
 ozon_product_package_z: ' . replaceEndLine($OZON_PRODUCT['package_z']) . '
 ozon_product_package_g: ' . replaceEndLine($OZON_PRODUCT['package_g']) . '
+ozon_product_package_l: ' . replaceEndLine($OZON_PRODUCT['package_l']) . '
 ozon_product_attributes: ' . replaceEndLine($OZON_PRODUCT['attributes']) . '
 ---
 
@@ -232,6 +235,7 @@ ozon_product_attributes: ' . replaceEndLine($OZON_PRODUCT['attributes']) . '
     ozon_product_package_y = page.ozon_product_package_y
     ozon_product_package_z = page.ozon_product_package_z
     ozon_product_package_g = page.ozon_product_package_g
+    ozon_product_package_l = page.ozon_product_package_l
     ozon_product_attributes = page.ozon_product_attributes
 %}
 
