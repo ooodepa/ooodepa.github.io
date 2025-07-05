@@ -128,31 +128,27 @@
 {% if include.ozon_product_attributes %}
     {% assign attributes = include.ozon_product_attributes %}
 
-    <table class="table table-bordered table-sm caption-top mt-2">
-        <caption class="text-center text-primary">Дополнительные характеристики продукта</caption>
-        <thead>
-            <tr>
-                <th class="text-center" width="250">Характеристика</th>
-                <th class="text-center">Значение</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for attribute in attributes %}
-                {% if attribute.id == 11254 %}
-                    {% continue %}
-                {% endif %}
+    <h2>Дополнительные характеристики продукта</h2>
 
-                <tr>
-                    <td>{{ attribute.id }}</td>
-                    <td>
-                        {% for value in attribute.values %}
-                            <div>
-                                {{ value.value }}
-                            </div>
-                        {% endfor %}
-                    </td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div class="row mb-2">
+         {% for attribute in attributes %}
+            {% if attribute.id == 11254 %}
+                {% continue %}
+            {% endif %}
+
+            <hr class="mt-2 mb-2" />
+
+            <div class="col-sm-12 col-md-3 fw-bold">
+                {{ attribute._name }}
+            </div>
+
+            <div class="col-sm-12 col-md-9">
+                {% for value in attribute.values %}
+                    <div>
+                        {{ value.value }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 {% endif %}

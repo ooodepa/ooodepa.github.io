@@ -1,6 +1,7 @@
 <?php
 
 include_once 'OzonProducts.php';
+include_once 'OzonProductsAttrs.php';
 
 function replaceEndLine($data) {
     return json_encode($data, JSON_UNESCAPED_UNICODE);
@@ -63,6 +64,13 @@ function deleteDirectory($dir) {
             json_encode($PRODUCT_INFO_ATTRIBUTE, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE),
         );
 
+        $PRODUCT_ATTRS = OzonProductsAttrs::getAllAttributes_byProductInfoAttrArray($PRODUCT_INFO_ATTRIBUTE);
+
+        file_put_contents(
+            "$folder/ozon__v1_description-category_attribute.json",
+            json_encode($PRODUCT_ATTRS, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE),
+        );
+
         $OZON_PRODUCTS = [];
 
         for ($i = 0; $i < count($PRODUCTS); $i++) {
@@ -89,6 +97,8 @@ function deleteDirectory($dir) {
                 'package_z' => "-",
                 'package_g' => "-",
                 'attributes' => "-",
+                'description_category_id' => '-',
+                'type_id' => '-',
             ];
 
             $data['product_id'] = $PRODUCT['product_id'];
@@ -127,11 +137,33 @@ function deleteDirectory($dir) {
                     $data['package_z'] = $PRODUCT_INFO_ATTR['height'];
                     $data['package_g'] = $PRODUCT_INFO_ATTR['weight'];
                     $data['attributes'] = $PRODUCT_INFO_ATTR['attributes'];
+                    $data['description_category_id'] = $PRODUCT_INFO_ATTR['description_category_id'];
+                    $data['type_id'] = $PRODUCT_INFO_ATTR['type_id'];
                     break;
                 }
             }
 
             $OZON_PRODUCTS []= $data;
+        }
+
+        for ($i = 0; $i < count($OZON_PRODUCTS); $i++) {
+            $PRODUCT = $OZON_PRODUCTS[$i];
+
+            $attrs = $PRODUCT['attributes'];
+            for ($j = 0; $j < count($attrs); $j++) {
+                $OZON_PRODUCTS[$i]['attributes'][$j]['_name'] = '-';
+
+                for ($k = 0; $k < count($PRODUCT_ATTRS); $k++) {
+                    if (
+                        $PRODUCT_ATTRS[$k]['_description_category_id'] == $PRODUCT['description_category_id']
+                        && $PRODUCT_ATTRS[$k]['_type_id'] == $PRODUCT['type_id']
+                        && $PRODUCT_ATTRS[$k]['id'] == $attrs[$j]['id']
+                    ) {
+                        $OZON_PRODUCTS[$i]['attributes'][$j]['_name'] = $PRODUCT_ATTRS[$k]['name'];
+                        break;
+                    }
+                }
+            }
         }
 
         file_put_contents(
