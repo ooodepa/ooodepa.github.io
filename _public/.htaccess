@@ -7,3 +7,6 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 # Перенаправление с http на https
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Ошибка 404
+ErrorDocument 404 /404/
