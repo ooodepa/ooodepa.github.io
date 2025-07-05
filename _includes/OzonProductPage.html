@@ -1,0 +1,158 @@
+<h1>{{ include.ozon_product_name }}</h1>
+
+{% if include.ozon_product_all_images %}
+    {% assign photos = include.ozon_product_all_images %}
+
+    <div id="carouselExample" class="carousel carousel-dark slide mt-2 mb-2">
+        <div class="carousel-indicators">
+            {% for photo in photos %}
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="{{ forloop.index }}"
+                    class="{% if forloop.first %}active{% endif %}"
+                    aria-current="{% if forloop.first %}true{% endif %}"
+                    aria-label="Slide {{ forloop.index }}"
+                ></button>
+            {% endfor %}
+        </div>
+        <div class="carousel-inner">
+            {% for photo in photos %}
+                <div class="carousel-item text-center {% if forloop.first %}active{% endif %}">
+                    <img
+                        src="{{ photo }}"
+                        alt="нет фото"
+                        width="100"
+                        height="100"
+                        style="height: auto; width: auto; max-height: 40vh;"
+                    />
+                </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+{% endif %}
+
+<table class="table table-bordered table-sm caption-top mt-2">
+    <caption class="text-center text-primary">Основные характеристики продукта</caption>
+    <thead>
+        <tr>
+            <th class="text-center" width="250">Характеристика</th>
+            <th class="text-center">Значение</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ID продукта</td>
+            <td>{{ nclude.ozon_product_id }}</td>
+        </tr>
+        <tr>
+            <td>Артикул OZON</td>
+            <td>
+                <a
+                    target="_blank"
+                    href="https://ozon.ru/products/{{ include.ozon_product_sku }}"
+                >
+                    {{ include.ozon_product_sku }}
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Артикул продавца</td>
+            <td>{{ include.ozon_product_offer_id }}</td>
+        </tr>
+        <tr>
+            <td>Штрихкод</td>
+            <td>
+                {% for barcode in include.ozon_product_barcodes %}
+                    <div>{{ barcode }}</div>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td>Глубина продукта с упаковкой</td>
+            <td>{{ include.ozon_product_package_x }}</td>
+        </tr>
+        <tr>
+            <td>Ширина продукта с упаковкой</td>
+            <td>{{ include.ozon_product_package_y }}</td>
+        </tr>
+        <tr>
+            <td>Высота продукта с упаковкой</td>
+            <td>{{ include.ozon_product_package_z }}</td>
+        </tr>
+        <tr>
+            <td>Вес продукта с упаковкой</td>
+            <td>{{ include.ozon_product_package_g }}</td>
+        </tr>
+        <tr>
+            <td>Габариты на этикетке</td>
+            <td>
+                {{ include.ozon_product_package_x }} x {{ include.ozon_product_package_y }} x {{ include.ozon_product_package_z }} | {{ include.ozon_product_package_g }} г.
+            </td>
+        </tr>
+        <tr>
+            <td>Создана карточка</td>
+            <td>
+                <abbr
+                    class="text-decoration-none"
+                    title="{{ include.ozon_product_created_at }}"
+                >
+                    {{ include.ozon_product_created_at | date: "%d.%m.%Y %H:%M" }}
+                    ({% include days_ago.html date=include.ozon_product_created_at %})
+                </abbr>
+            </td>
+        </tr>
+        <tr>
+            <td>Обновлена карточка</td>
+            <td>
+                <abbr
+                    class="text-decoration-none"
+                    title="{{ include.ozon_product_updated_at }}"
+                >
+                    {{ include.ozon_product_updated_at | date: "%d.%m.%Y %H:%M" }}
+                    ({% include days_ago.html date=include.ozon_product_updated_at %})
+                </abbr>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+{% if include.ozon_product_attributes %}
+    {% assign attributes = include.ozon_product_attributes %}
+
+    <table class="table table-bordered table-sm caption-top mt-2">
+        <caption class="text-center text-primary">Дополнительные характеристики продукта</caption>
+        <thead>
+            <tr>
+                <th class="text-center" width="250">Характеристика</th>
+                <th class="text-center">Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for attribute in attributes %}
+                {% if attribute.id == 11254 %}
+                    {% continue %}
+                {% endif %}
+
+                <tr>
+                    <td>{{ attribute.id }}</td>
+                    <td>
+                        {% for value in attribute.values %}
+                            <div>
+                                {{ value.value }}
+                            </div>
+                        {% endfor %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

@@ -1,0 +1,18 @@
+{% assign date_unix = include.date | date: "%s" | plus: 0 %}
+{% assign now_unix = "now" | date: "%s" | plus: 0 %}
+{% assign diff_days = now_unix | minus: date_unix | divided_by: 86400 %}
+
+{% case diff_days %}
+    {% when 0 %}
+        сегодня
+    {% when 1 %}
+        вчера
+    {% when 2 %}
+        2 дня назад
+    {% when 3 %}
+        3 дня назад
+    {% when 4 %}
+        4 дня назад
+    {% else %}
+        {{ diff_days }} дней назад
+{% endcase %}

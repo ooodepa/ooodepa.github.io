@@ -10,8 +10,12 @@ collections:
   products:
     output: true
     permalink: /products/:path
+  ozon_products:
+    output: true
+    permalink: /ozon-products/:path
 
 exclude:
+  - _cron
   - LICENSE
 
 sass:

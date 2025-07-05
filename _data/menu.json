@@ -35,6 +35,11 @@
         "isHidden": false
     },
     {
+        "name": "Продукты на OZON",
+        "href": "/ozon-products/",
+        "isHidden": false
+    },
+    {
         "name": "Контакты",
         "href": "/contacts/",
         "isHidden": false

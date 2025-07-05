@@ -72,6 +72,18 @@
         "dp_isHidden": "1"
     },
     {
+        "dp_id": "80e267ac-80ad-448c-b474-a8536f500949",
+        "dp_name": "Продукты на OZON",
+        "dp_date": "2025-03-05 16:50:00",
+        "dp_urlSegment": "ozon-products",
+        "dp_photoUrl": "",
+        "dp_text": "",
+        "dp_sortingIndex": "10000",
+        "dp_seoKeywords": "Продукты на OZON",
+        "dp_seoDescription": "Продукты на OZON",
+        "dp_isHidden": "1"
+    },
+    {
         "dp_id": "a4dfcef1-0861-4f46-bce9-454e6bd74f8b",
         "dp_name": "Главная",
         "dp_date": "2023-04-12 17:00:00",

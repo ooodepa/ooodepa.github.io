@@ -1,0 +1,27 @@
+<div class="row">
+    {% for ozonProd in site.data.OzonProducts%}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="card m-2">
+                <img
+                    src="{{ ozonProd.primary_image }}"
+                    class="card-img-top"
+                    alt="На фотосессии"
+                    width="200"
+                    height="200"
+                    style="object-fit: cover; height: 200px;"
+                />
+                <div class="card-body">
+                    <h5 class="card-title">{{ ozonProd.offer_id }}</h5>
+                    <p class="card-text flex-grow-1">{{ ozonProd.name }}</p>
+                    <a
+                        target="_blank"
+                        class="btn btn-primary d-block"
+                        href="/ozon-products/{{ ozonProd.offer_id }}/"
+                    >
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
