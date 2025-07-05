@@ -1,29 +1,46 @@
-const fs = require('fs');
-const PRODUCTS = require('./../../_data/DP_CTL_Items.json');
+const fs = require("fs");
+const PRODUCTS = require("./../../_data/DP_CTL_Items.json");
 
 function replaceEndLine(str) {
-    let result = '"' + `${str}`.replace(/\n/g, '\\n').replace(/"/g, '\\"') + '"';
+  let result = '"' + `${str}`.replace(/\n/g, "\\n").replace(/"/g, '\\"') + '"';
 
-    return result;
+  return result;
 }
 
 async function main() {
-    try {
+  try {
+    const FOLDER = `./../../_products`;
 
-        fs.mkdir('./../../_products', { recursive: true }, (err) => {
-            if (err) {
-                console.error('Ошибка при создании папки:', err);
-                return;
-            }
-            console.log('Папка успешно создана');
-        });
+    await fs.promises.mkdir(FOLDER, { recursive: true }, (err) => {
+      if (err) {
+        console.error("Ошибка при создании папки:", err);
+        return;
+      }
+      console.log("Папка успешно создана");
+    });
 
-        for (let i = 0; i < PRODUCTS.length; i++) {
-            const PRODUCT = PRODUCTS[i];
-            const FILENAME = `${PRODUCT.dp_seoUrlSegment}` || `${PRODUCT.dp_id}`;
-            const FILE_PATH = `./../../_products/${FILENAME}.html`;
+    for (let i = 0; i < PRODUCTS.length; i++) {
+      const PRODUCT = PRODUCTS[i];
 
-            const FILE_TEXT = `---
+      const CURRENT_PRODUCT_FODLER = `${FOLDER}/${PRODUCT.dp_seoUrlSegment}`;
+      await fs.promises.mkdir(
+        CURRENT_PRODUCT_FODLER,
+        { recursive: true },
+        (err) => {
+          if (err) {
+            console.error("Ошибка при создании папки:", err);
+            return;
+          }
+          console.log("Папка успешно создана");
+        }
+      );
+
+      const FILE_PATH =
+        PRODUCT.dp_seoUrlSegment == "root"
+          ? `${FOLDER}/index.html`
+          : `${CURRENT_PRODUCT_FODLER}/index.html`;
+
+      const FILE_TEXT = `---
 layout: page-container
 
 SEO_TITLE: ${replaceEndLine(PRODUCT.dp_seoTitle)}
@@ -53,12 +70,11 @@ product_vendors: ${replaceEndLine(PRODUCT.dp_vendorIds)}
 %}
 `;
 
-            await fs.promises.writeFile(FILE_PATH, FILE_TEXT);
-        }
+      await fs.promises.writeFile(FILE_PATH, FILE_TEXT);
     }
-    catch (exception) {
-        console.error(exception);
-    }
+  } catch (exception) {
+    console.error(exception);
+  }
 }
 
 main();

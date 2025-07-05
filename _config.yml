@@ -15,7 +15,7 @@ collections:
     permalink: /:path
   products:
     output: true
-    permalink: /products/:path
+    permalink: /nomenclature/:path
   ozon_products:
     output: true
     permalink: /ozon-products/:path
