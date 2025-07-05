@@ -26,9 +26,9 @@ async function main() {
             const FILE_TEXT = `---
 layout: page-container
 
-SEO_TITLE: ${replaceEndLine(PRODUCT.dp_seoTitle)}
-SEO_DESCRIPTION: ${replaceEndLine(PRODUCT.dp_seoDescription)}
-SEO_KEYWORDS: ${replaceEndLine(PRODUCT.dp_seoKeywords)}
+SEO_TITLE: ${replaceEndLine(PRODUCT.SEO_TITLE)}
+SEO_DESCRIPTION: ${replaceEndLine(PRODUCT.SEO_DESCRIPTION)}
+SEO_KEYWORDS: ${replaceEndLine(PRODUCT.SEO_KEYWORDS)}
 
 product_id: ${replaceEndLine(PRODUCT.dp_id)}
 product_name: ${replaceEndLine(PRODUCT.dp_seoTitle)}
