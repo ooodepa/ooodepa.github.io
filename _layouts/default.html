@@ -2,6 +2,10 @@
 layout: compress
 ---
 
+{% if site.data.env.log_visit %}
+    {% include log_visit.php %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="ru">
 
