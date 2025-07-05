@@ -1,7 +1,7 @@
-<h1>{{ include.ozon_product_name }}</h1>
+<h1>{{ page.ozon_product_name }}</h1>
 
-{% if include.ozon_product_all_images %}
-    {% assign photos = include.ozon_product_all_images %}
+{% if page.ozon_product_all_images %}
+    {% assign photos = page.ozon_product_all_images %}
 
     <div id="carouselExample" class="carousel carousel-dark slide mt-2 mb-2">
         <div class="carousel-indicators">
@@ -40,8 +40,9 @@
     </div>
 {% endif %}
 
+<h2>Основные характеристики продукта</h2>
+
 <table class="table table-bordered table-sm caption-top mt-2">
-    <caption class="text-center text-primary">Основные характеристики продукта</caption>
     <thead>
         <tr>
             <th class="text-center" width="250">Характеристика</th>
@@ -51,66 +52,66 @@
     <tbody>
         <tr>
             <td>ID продукта</td>
-            <td>{{ nclude.ozon_product_id }}</td>
+            <td>{{ page.ozon_product_id }}</td>
         </tr>
         <tr>
             <td>Артикул OZON</td>
             <td>
                 <a
                     target="_blank"
-                    href="https://ozon.ru/products/{{ include.ozon_product_sku }}"
+                    href="https://ozon.ru/products/{{ page.ozon_product_sku }}"
                 >
-                    {{ include.ozon_product_sku }}
+                    {{ page.ozon_product_sku }}
                 </a>
             </td>
         </tr>
         <tr>
             <td>Артикул продавца</td>
-            <td>{{ include.ozon_product_offer_id }}</td>
+            <td>{{ page.ozon_product_offer_id }}</td>
         </tr>
         <tr>
             <td>Штрихкод</td>
             <td>
-                {% for barcode in include.ozon_product_barcodes %}
+                {% for barcode in page.ozon_product_barcodes %}
                     <div>{{ barcode }}</div>
                 {% endfor %}
             </td>
         </tr>
         <tr>
             <td>Глубина продукта с упаковкой, мм</td>
-            <td>{{ include.ozon_product_package_x }}</td>
+            <td>{{ page.ozon_product_package_x }}</td>
         </tr>
         <tr>
             <td>Ширина продукта с упаковкой, мм</td>
-            <td>{{ include.ozon_product_package_y }}</td>
+            <td>{{ page.ozon_product_package_y }}</td>
         </tr>
         <tr>
             <td>Высота продукта с упаковкой, мм</td>
-            <td>{{ include.ozon_product_package_z }}</td>
+            <td>{{ page.ozon_product_package_z }}</td>
         </tr>
         <tr>
             <td>Вес продукта с упаковкой, г</td>
-            <td>{{ include.ozon_product_package_g }}</td>
+            <td>{{ page.ozon_product_package_g }}</td>
         </tr>
         <tr>
             <td>Габариты на этикетке</td>
             <td>
-                {{ include.ozon_product_package_x }} x {{ include.ozon_product_package_y }} x {{ include.ozon_product_package_z }} | {{ include.ozon_product_package_g }} г.
+                {{ page.ozon_product_package_x }} x {{ page.ozon_product_package_y }} x {{ page.ozon_product_package_z }} | {{ page.ozon_product_package_g }} г.
             </td>
         </tr>
         <tr>
             <td>Объем коробки, л</td>
-            <td>{{ include.ozon_product_package_l }}</td>
+            <td>{{ page.ozon_product_package_l }}</td>
         </tr>
         <tr>
             <td>Создана карточка</td>
             <td>
                 <abbr
                     class="text-decoration-none"
-                    title="{{ include.ozon_product_created_at }}"
+                    title="{{ page.ozon_product_created_at }}"
                 >
-                    {{ include.ozon_product_created_at | date: "%d.%m.%Y %H:%M" }}
-                    ({% include days_ago.html date=include.ozon_product_created_at %})
+                    {{ page.ozon_product_created_at | date: "%d.%m.%Y %H:%M" }}
+                    ({% include days_ago.html date=page.ozon_product_created_at %})
                 </abbr>
             </td>
         </tr>
@@ -119,22 +120,22 @@
             <td>
                 <abbr
                     class="text-decoration-none"
-                    title="{{ include.ozon_product_updated_at }}"
+                    title="{{ page.ozon_product_updated_at }}"
                 >
-                    {{ include.ozon_product_updated_at | date: "%d.%m.%Y %H:%M" }}
-                    ({% include days_ago.html date=include.ozon_product_updated_at %})
+                    {{ page.ozon_product_updated_at | date: "%d.%m.%Y %H:%M" }}
+                    ({% include days_ago.html date=page.ozon_product_updated_at %})
                 </abbr>
             </td>
         </tr>
     </tbody>
 </table>
 
-{% if include.ozon_product_attributes %}
-    {% assign attributes = include.ozon_product_attributes %}
+{% if page.ozon_product_attributes %}
+    {% assign attributes = page.ozon_product_attributes %}
 
     <h2>Дополнительные характеристики продукта</h2>
 
-    <div class="row mb-2">
+    <div class="row mb-4">
          {% for attribute in attributes %}
             {% if attribute.id == 11254 %}
                 {% continue %}
