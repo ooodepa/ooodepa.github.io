@@ -26,11 +26,13 @@ async function main() {
             const FILE_TEXT = `---
 layout: page-container
 
-SEO_TITLE: ${replaceEndLine(PRODUCT.SEO_TITLE)}
-SEO_DESCRIPTION: ${replaceEndLine(PRODUCT.SEO_DESCRIPTION)}
-SEO_KEYWORDS: ${replaceEndLine(PRODUCT.SEO_KEYWORDS)}
+SEO_TITLE: ${replaceEndLine(PRODUCT.dp_seoTitle)}
+SEO_DESCRIPTION: ${replaceEndLine(PRODUCT.dp_seoDescription)}
+SEO_KEYWORDS: ${replaceEndLine(PRODUCT.dp_seoKeywords)}
 
 product_id: ${replaceEndLine(PRODUCT.dp_id)}
+product_parent_id: ${replaceEndLine(PRODUCT.dp_1cParentId)}
+product_is_folder: ${replaceEndLine(PRODUCT.dp_1cIsFolder)}
 product_name: ${replaceEndLine(PRODUCT.dp_seoTitle)}
 product_brand: ${replaceEndLine(PRODUCT.dp_brand)}
 product_barcodes: ${replaceEndLine(PRODUCT.dp_barcodes)}
@@ -41,6 +43,8 @@ product_vendors: ${replaceEndLine(PRODUCT.dp_vendorIds)}
 {%
     include ProductPage.html
     product_id=page.product_id
+    product_parent_id=page.product_parent_id
+    product_is_folder=page.product_is_folder
     product_name=page.product_name
     product_brand=page.product_brand
     product_barcodes=page.product_barcodes
