@@ -40,6 +40,61 @@
     </div>
 {% endif %}
 
+<div class="pt-2 pb-1">
+    <a
+        target="_blank"
+        class="btn d-block"
+        style="background: linear-gradient(to right, #2158f0, #f91156); color: white;"
+        href="https://ozon.ru/products/{{ page.ozon_product_sku }}"
+    >
+        Открыть на OZON
+    </a>
+</div>
+
+{% comment %} < < < < < < < < Объединеные товары {% endcomment %}
+
+{% assign array_products_by_association_name = "" | split: "" %}
+
+{% for ozonProd in site.data.OzonProducts %}
+    {% if page.ozon_product__association_name == ozonProd._association_name %}
+        {% assign array_products_by_association_name = array_products_by_association_name | push: ozonProd %}
+    {% endif %}
+{% endfor %}
+
+{% assign sorted_array_products_by_association_name = array_products_by_association_name | sort: "name" %}
+
+{% if sorted_array_products_by_association_name.size > 1 %}
+    <h2>Объединенные товары</h2>
+    <div class="row">
+        {% for product in sorted_array_products_by_association_name %}
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card m-2">
+                    <img
+                        src="{{ product.primary_image }}"
+                        class="card-img-top"
+                        alt="На фотосессии"
+                        width="200"
+                        height="200"
+                        style="object-fit: cover; height: 200px;"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.offer_id }}</h5>
+                        <p class="card-text flex-grow-1">{{ product.name }}</p>
+                        <a
+                            class="btn btn-primary d-block"
+                            href="/ozon-products/{{ product.offer_id }}/"
+                        >
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% comment %} > > > > > > > > Объединеные товары {% endcomment %}
+
 <h2>Основные характеристики продукта</h2>
 
 <table class="table table-bordered table-sm caption-top mt-2">
@@ -157,3 +212,47 @@
         {% endfor %}
     </div>
 {% endif %}
+
+{% comment %} < < < < < < < < Товары категории {% endcomment %}
+
+{% assign array_products_by_group = "" | split: "" %}
+
+{% for ozonProd in site.data.OzonProducts %}
+    {% if page.ozon_product__group == ozonProd._group %}
+        {% assign array_products_by_group = array_products_by_group | push: ozonProd %}
+    {% endif %}
+{% endfor %}
+
+{% assign sorted_array_products_by_group = array_products_by_group | sort: "name" %}
+
+{% if sorted_array_products_by_group.size > 1 %}
+    <h2>Товары категории: {{ page.ozon_product__group }}</h2>
+    <div class="row">
+        {% for product in sorted_array_products_by_group %}
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card m-2">
+                    <img
+                        src="{{ product.primary_image }}"
+                        class="card-img-top"
+                        alt="На фотосессии"
+                        width="200"
+                        height="200"
+                        style="object-fit: cover; height: 200px;"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.offer_id }}</h5>
+                        <p class="card-text flex-grow-1">{{ product.name }}</p>
+                        <a
+                            class="btn btn-primary d-block"
+                            href="/ozon-products/{{ product.offer_id }}/"
+                        >
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% comment %} > > > > > > > > Товары категории {% endcomment %}

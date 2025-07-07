@@ -168,6 +168,35 @@ function deleteDirectory($dir) {
             }
         }
 
+        for ($i = 0; $i < count($OZON_PRODUCTS); $i++) {
+            $PRODUCT = $OZON_PRODUCTS[$i];
+
+            $_group = '-';
+            $_brand = '-';
+            $_association_name = '-';
+
+            $attrs = $PRODUCT['attributes'];
+            for ($j = 0; $j < count($attrs); $j++) {
+                switch($attrs[$j]['id']) {
+                    case 22390:
+                        $_group = $attrs[$j]['values'][0]['value'];
+                        break;
+
+                    case 85:
+                        $_brand = $attrs[$j]['values'][0]['value'];
+                        break;
+
+                    case 9048:
+                        $_association_name = $attrs[$j]['values'][0]['value'];
+                        break;
+                }
+            }
+
+            $OZON_PRODUCTS[$i]['_group'] = $_group;
+            $OZON_PRODUCTS[$i]['_brand'] = $_brand;
+            $OZON_PRODUCTS[$i]['_association_name'] = $_association_name;
+        }
+
         file_put_contents(
             "./../../_data/OzonProducts.json",
             json_encode($OZON_PRODUCTS, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE),
@@ -215,6 +244,9 @@ ozon_product_package_z: ' . replaceEndLine($OZON_PRODUCT['package_z']) . '
 ozon_product_package_g: ' . replaceEndLine($OZON_PRODUCT['package_g']) . '
 ozon_product_package_l: ' . replaceEndLine($OZON_PRODUCT['package_l']) . '
 ozon_product_attributes: ' . replaceEndLine($OZON_PRODUCT['attributes']) . '
+ozon_product__group: ' . replaceEndLine($OZON_PRODUCT['_group']) . '
+ozon_product__brand: ' . replaceEndLine($OZON_PRODUCT['_brand']) . '
+ozon_product__association_name: ' . replaceEndLine($OZON_PRODUCT['_association_name']) . '
 ---
 
 {%
