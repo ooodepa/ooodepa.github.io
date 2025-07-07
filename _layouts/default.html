@@ -14,8 +14,8 @@ layout: compress
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- = = = = = = = = -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="{{ page.SEO_DESCRIPTION }}{{ site.data.env.description }}" />
-    <meta name="keywords" content="{{ page.SEO_KEYWORDS }}{{ site.data.env.keywords }}" />
+    <meta name="description" content="{{ page.SEO_DESCRIPTION | escape }}{{ site.data.env.description }}" />
+    <meta name="keywords" content="{{ page.SEO_KEYWORDS | escape }}{{ site.data.env.keywords }}" />
     <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
     <meta name="theme-color" content="#06c" />
     <!-- < < < < < < < < favicon -->
