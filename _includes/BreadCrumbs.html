@@ -1,0 +1,26 @@
+{% if page.url != '/index' %}
+    {% assign crumbs = page.url | remove: '/index' | split: '/' %}
+
+    <div class="pt-3 pb-3" style="background-color: #f7f7f7;">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="breadcrumb">
+                <ul class="d-flex flex-wrap m-0 p-0">
+                    <li style="list-style-type: none;">
+                        <a href="/">home</a>
+                    </li>
+                    {% for crumb in crumbs offset: 1 %}
+                        <span class="ps-1 pe-1">/</span>
+                        <li style="list-style-type: none;">
+                            <a
+                                href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+                                {{ crumb | url_decode }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+{% endif %}
+
+<div class="mb-2"></div>
