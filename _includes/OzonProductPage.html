@@ -79,7 +79,8 @@
                     />
                     <div class="card-body">
                         <h5 class="card-title">{{ product.offer_id }}</h5>
-                        <p class="card-text flex-grow-1">{{ product.name }}</p>
+                        <p class="card-text flex-grow-1 mb-0">{{ product.name }}</p>
+                        <p class="card-text text-end text-secondary mb-1">Осталось {{ product._count_in_store }} шт.</p>
                         <a
                             class="btn btn-primary d-block"
                             href="/ozon-products/{{ product.offer_id }}/"
@@ -241,7 +242,8 @@
                     />
                     <div class="card-body">
                         <h5 class="card-title">{{ product.offer_id }}</h5>
-                        <p class="card-text flex-grow-1">{{ product.name }}</p>
+                        <p class="card-text flex-grow-1 mb-0">{{ product.name }}</p>
+                        <p class="card-text text-end text-secondary mb-1">Осталось {{ product._count_in_store }} шт.</p>
                         <a
                             class="btn btn-primary d-block"
                             href="/ozon-products/{{ product.offer_id }}/"

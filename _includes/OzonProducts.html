@@ -1,9 +1,12 @@
+{% assign sorted_array_products_by_count = site.data.OzonProducts | sort: "_count_in_store" %}
+{% assign reversed_sorted_array_products_by_count = sorted_array_products_by_count | reverse %}
+
 <div class="row">
-    {% for ozonProd in site.data.OzonProducts%}
+    {% for product in reversed_sorted_array_products_by_count %}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
             <div class="card m-2">
                 <img
-                    src="{{ ozonProd.primary_image }}"
+                    src="{{ product.primary_image }}"
                     class="card-img-top"
                     alt="На фотосессии"
                     width="200"
@@ -11,11 +14,12 @@
                     style="object-fit: cover; height: 200px;"
                 />
                 <div class="card-body">
-                    <h5 class="card-title">{{ ozonProd.offer_id }}</h5>
-                    <p class="card-text flex-grow-1">{{ ozonProd.name }}</p>
+                    <h5 class="card-title">{{ product.offer_id }}</h5>
+                    <p class="card-text flex-grow-1 mb-0">{{ product.name }}</p>
+                    <p class="card-text text-end text-secondary mb-1">Осталось {{ product._count_in_store }} шт.</p>
                     <a
                         class="btn btn-primary d-block"
-                        href="/ozon-products/{{ ozonProd.offer_id }}/"
+                        href="/ozon-products/{{ product.offer_id }}/"
                     >
                         Подробнее
                     </a>

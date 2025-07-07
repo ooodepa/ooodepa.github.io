@@ -126,6 +126,14 @@ function deleteDirectory($dir) {
                     );
                     $data['color_image'] = $PRODUCT_INFO['color_image'];
                     $data['package_l'] = $PRODUCT_INFO['volume_weight'];
+
+                    $count_in_store = 0;
+                    $stocks = $PRODUCT_INFO['stocks']['stocks'];
+                    for ($k = 0; $k < count($stocks); $k++) {
+                        $count_in_store += $stocks[$k]['present'];
+                    }
+                    $data['_count_in_store'] = $count_in_store;
+
                     break;
                 }
             }
@@ -247,6 +255,7 @@ ozon_product_attributes: ' . replaceEndLine($OZON_PRODUCT['attributes']) . '
 ozon_product__group: ' . replaceEndLine($OZON_PRODUCT['_group']) . '
 ozon_product__brand: ' . replaceEndLine($OZON_PRODUCT['_brand']) . '
 ozon_product__association_name: ' . replaceEndLine($OZON_PRODUCT['_association_name']) . '
+ozon_product__count_in_store: ' . replaceEndLine($OZON_PRODUCT['_count_in_store']) . '
 ---
 
 {%
