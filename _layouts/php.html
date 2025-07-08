@@ -1,0 +1,11 @@
+---
+# For PHP
+---
+
+{% if site.data.env.need_use_php == true %}
+    {% if site.data.env.need_visit_count %}
+        {% include visit_count.php %}
+    {% endif %}
+{% else %}
+    <p>Выключена работа PHP</p>
+{% endif %}

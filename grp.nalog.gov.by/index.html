@@ -1,0 +1,37 @@
+---
+layout: page-container
+
+SEO_TITLE: Данные по УНП
+SEO_DESCRIPTION: Данные по УНП
+SEO_KEYWORDS: Данные по УНП
+---
+
+<h1>Данные по УНП</h1>
+
+<div class="input-group mb-3">
+    <span class="input-group-text">УНП</span>
+    <input
+        type="text"
+        class="form-control"
+        id="grp_nalog_gov_by_input"
+        oninput="UnpHelper.onInputChange()"
+    />
+    <button
+        class="btn btn-primary"
+        onclick="UnpHelper.onButtonClick()"
+    >
+        Найти
+    </button>
+</div>
+
+{% if jekyll.environment == "production" %}
+    <script src="/grp.nalog.gov.by/js/UnpHelper.js?v={{ site.time | date: '%Y-%m-%d_%H-%M' }}"></script>
+{% else %}
+    <script src="/grp.nalog.gov.by/js/UnpHelper.js"></script>
+{% endif %}
+
+<div id="grp_nalog_gov_by_result">
+    <div class="alert alert-warning" role="alert">
+        Введите УНП и нажмите кнопку "Найти", чтобы увидеть данные
+    </div>
+</div>
