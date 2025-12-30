@@ -7,7 +7,6 @@
     "belgie": "Регистрация в БелГИЭ от <abbr title=\"2019-05-14 16:55:25\">14 мая 2019 г.</abbr>",
     "rejim_raboti": "Режим работы: 08:00 - 17:00 (выходной сб, вс)",
     "buttons": [
-        "<a class=\"btn btn-primary d-block\" href=\"tel:+375162517733\">+375-162-51-77-33</a>",
         "<a class=\"btn btn-primary d-block\" href=\"mailto:info@de-pa.by\">info@de-pa.by</a>"
     ],
     "rights": "Павел Галанин © 2017-2025",
