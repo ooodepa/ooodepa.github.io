@@ -26,3 +26,6 @@ exclude:
 
 sass:
   style: compressed
+
+# timezone: UTC
+timezone: Asia/Istanbul
